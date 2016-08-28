@@ -1,51 +1,584 @@
-extends base
+<!doctype html>
 
-block title
-  title= page.title + ' | ' + config.title
 
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content)
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    include _partial/comments
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="brainstorming, JavaScript, planning," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="This is my first post on this blog, so I think I’d like to introduce it just alittle bit before I get things going. This is my development blog. I post aboutthings I am working on. Right now, I’m work">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Three Project Ideas">
+<meta property="og:url" content="riggt.github.io/2016/08/27/Three-Project-Ideas/index.html">
+<meta property="og:site_name" content="riggt">
+<meta property="og:description" content="This is my first post on this blog, so I think I’d like to introduce it just alittle bit before I get things going. This is my development blog. I post aboutthings I am working on. Right now, I’m work">
+<meta property="og:image" content="http://i.imgur.com/TRwYl69.jpg">
+<meta property="og:updated_time" content="2016-08-28T21:30:38.974Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Three Project Ideas">
+<meta name="twitter:description" content="This is my first post on this blog, so I think I’d like to introduce it just alittle bit before I get things going. This is my development blog. I post aboutthings I am working on. Right now, I’m work">
+<meta name="twitter:image" content="http://i.imgur.com/TRwYl69.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="riggt.github.io/2016/08/27/Three-Project-Ideas/"/>
+
+  <title> Three Project Ideas | riggt </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">riggt</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">A Blog About Things</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Three Project Ideas
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-08-27T22:03:24-04:00" content="2016-08-27">
+              2016-08-27
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>This is my first post on this blog, so I think I’d like to introduce it just a<br>little bit before I get things going. This is my development blog. I post about<br>things I am working on. Right now, I’m working on my senior capstone at Berea<br>College. These are a few ideas that I’ve been thinking about to work on.</p>
+<h1 id="Twitter-Bot-Detector"><a href="#Twitter-Bot-Detector" class="headerlink" title="Twitter Bot Detector"></a>Twitter Bot Detector</h1><p>Someone in our class pitched the idea of a Twitter Bot as a project. I, being a<br>contrarian, immediately thought to myself that I should build a Twitter Bot<br>Detector.</p>
+<p>After looking into the viability of this project, I found that the University<br>of Texas had already done this, so I looked at their work. There are several<br>parts of detecting a twitter bot, all related to different aspects of a bot’s<br>behavior.</p>
+<p>The first thing to look at is how much content is the bot creating, and how much<br>is it regurgitating via retweets. An actual human person will on occasion have<br>something to say about something. It might be how their day was, it might be<br>what they had for breakfast, it might be an excited tweet about the future<br>times. Whatever it is, a human person will do this along side retweeting things<br>that they found nifty.</p>
+<p>The next tell tale sign of a twitter bot is the times of activity. Actual human<br>people have things they have to do through out their day. They need sleep, they<br>need food, they have to interact with physical people in the physical world,<br>they need to rotate their fluids. Twitter bots don’t have to do any of these<br>things. When looking at a human person’s twitter feed, it will have sporadic<br>activity; it will have periods of rapid tweeting and retweeting followed by<br>large blocks of doing other things. Twitter bots deviate from this behavior.<br>They can have rather constant streams of activity.</p>
+<p>Of course, modern twitter bots are sophisticated enough to pass both of these<br>tests. The next analyses are a little more sophisticated. They require<br>information and language processing that might be a little complex for a single<br>semester of work. I’m still going to describe them because I might decide that<br>they are actually simple enough, or someone else in our class might say to<br>themselves, “Hey. Travis might not be very good at these things, but I’ve done<br>them before, I feel really comfortable with them.”</p>
+<p>The next thing that Twitter Bots don’t have in common with human people is<br>sensible social networks. Human people have friends who know their other friends<br>You can reasonably expect a human user of twitter to have several followers who<br>not only follow the account in question, but also follow the several other<br>accounts that follow them as well as the account in question. This however does<br>need to take into consideration extremely popular twitter accounts as well as<br>verified accounts (which are generally popular).</p>
+<p>Even so, twitter bot builders have gotten sophisticated enough to subvert this<br>test method as well. They’ll set up several bot accounts that all follow<br>each other creating a social network of bots. I’m sure there are still ways to<br>detect this form of activity, but what I’m not sure about is how to do this. I<br>would probably put more thought into the next detection method before coming<br>back around to this.</p>
+<p>Human people usually use language in a certain way. One example would be that<br>human people don’t say “human people.” I’ve been doing that through this portion<br>of the blog post to get ready for this part of it. A bot detector needs to do<br>some language processing to see how human a questionable account seems to be in<br>its tweets. Ideally this mechanism would be quite robust, but a language<br>processor could make an entire project in itself. For the purposes of this<br>course, the bot detector’s ability to process language should be very basic.</p>
+<p>Each on their own, these methods can create quite a few false positives, or miss<br>advanced bots that successfully circumvent their methods. One needs to gather<br>results from each method and process them in order to come to an actual<br>conclusion. The first method I thought of to compile this data was a neural<br>network, but there are probably other ways as well.</p>
+<p>Conveniently, these are five different parts of creating a twitter bot detector,<br>and they are all rather modular. I think the completion of each component in<br>order make for excellent milestones for our senior projects course. I don’t<br>think spacing the components evenly is a wise plan though. The content vs<br>regurgitation component should take less time than the others, though it is<br>also the first component and needs to take learning how twitter handles data<br>into consideration. Content vs regurgitation should take two weeks.</p>
+<p>The activity monitor is also pretty simple, and should take about the same<br>amount of time as the content vs regurgitation component. However, the<br>programmer will already be familiar with how Twitter handles data by this time.<br>I think this should only take a week.</p>
+<p>This leaves 12 weeks to handle the big problems. I would allocate four weeks to<br>social network analysis, three to handle language processing, and two to set up<br>a neural network. I’ve given language processing a little less time because I<br>don’t think I can possibly come up with something adequate even given the whole<br>semester. I do however I think I can come up with something super basic if given<br>three weeks given some of the excellent resources available to us here at Berea<br>College in the form of our professors. Two weeks might seem like a long time to<br>set up a neural network, but in my experience, the tools for this are buggy and<br>poorly documented.</p>
+<p>This leaves three weeks for testing and fixing. That is less time than I would<br>like for a project of this complexity, especially given that attempts at<br>budgeting time for it might be way off scale for how much any component that<br>turns out to be more complex than initially believed. That being said, after<br>writing out the necessary steps, this project seems much more realistic than it<br>had when it was bouncing around in my head.</p>
+<p>This project also gives me an opportunity to grow because it is so different<br>from the things that I have been working on. The problem for me is that I don’t<br>think it gives me any utility growth, that being growth I can use. It would be<br>a fun project centered around things I don’t know much about, but I don’t see<br>a future path that would be strengthened by this project.</p>
+<p>I still feel like all of this was more than I could handle over a single<br>semester. I think I would be more interested in it if no one had done anything<br>in the field, or enough people had done work on the problem that I could make a<br>small tweak on a proven concept to make something interesting.</p>
+<p>Taking a proven concept and putting a small tweak on it to create something<br>interesting brings me into my next topic…</p>
+<h1 id="Email-Client"><a href="#Email-Client" class="headerlink" title="Email Client"></a>Email Client</h1><p>Using Node and Electron, JavaScript can be used for nearly anything. I would<br>like to play with creating an email client using electron.</p>
+<p>Sending email using HTML formatted text can be really annoying when there’s a<br>WYSIWYG editing pane that refuses to rest control when the user asks for it<br>(looking at you, Evolution). I would like to create one that has an editing<br>pane on the left that displays in plain text, and a preview window on the right<br>that displays what the email will look like to its recipient.</p>
+<p>This email client would not be comprehensive. It would only support the most<br>widely used protocols such as IMAP. Protocols like Exchange would be too big to<br>worry about in a single semester. I would rather focus on creating a well<br>polished, easy to use, basic email client than a feature complete email client<br>that doesn’t look nice. There’s Mutt for that.</p>
+<p>I think it’s worth considering when thinking about both the user interface and<br>milestones for the project what the views in an email client are. Usually you<br>have a pane for your folders, a pane that displays your emails in a list format,<br>a pane that displays the content of a single email, a pane for composing your<br>email, and a set up pane. That is five panes total.</p>
+<p>While it might seem like the best plan is to divide the term into milestones for<br>each of these components, I think a better plan would be to cycle through these<br>components rapidly, and improve them on each cycle. What I mean by this is that<br>instead of blocking out 3 weeks straight to work on the composition pane, I<br>would maybe spend each of my sessions in those three weeks working on a single<br>view, creating an iteration of the whole every three weeks.</p>
+<p>The work schedule I have set up for myself includes five hours on Thursday and<br>five hours on Friday each week to work on my project. I would do something like<br>Spending the Thursday of the start of each three week cycle designing how I want<br>things to work, and then the Friday working on one component. The next week I<br>would spend Thursday one of the remaining four components, and Friday working on<br>one of the remaining three. In the third and final week of each cycle I would<br>work on the two components I hadn’t worked on yet.</p>
+<p>This gives a sort of release cycle milestone set up that I think would work a<br>lot like working on a novella or paper. First you create a rough draft, one in<br>this case that might not even function completely properly. The first editing<br>session you spend figuring out what you like and don’t like about your rough<br>draft, making changes to the structure of your rough draft, and fixing major<br>bugs with the system, producing a second draft.</p>
+<p>The reason I refer to the releases as drafts is that you might come up with an<br>interface concept that in practice isn’t as good as you thought it was, so then<br>you would have to spend quite a bit of time making major changes to the way<br>things were. The other reason is that much like in writing a paper, there are<br>going to be errors in the code of the program. This is especially true because<br>Electron is a technology that I am not familiar with working on from scratch.<br>Any programming that I have done in the environment has been working with a<br>preexisting project.</p>
+<p>It’s sort of strange to think that one of the ideas I’m considering is centered<br>around a user interface idea that I have. User interfaces always presented me<br>problems when they were introduced in whatever programming language tutorial<br>I was working through. I am hopeful that my experience using MinCSS to style<br>pages will provide some help, given that Electron apps are essentially web<br>pages.</p>
+<p>Just as interesting twists on ideas drew me directly into this idea, web pages<br>draws me into the next…</p>
+<h1 id="Static-Web-Page-Generator"><a href="#Static-Web-Page-Generator" class="headerlink" title="Static Web Page Generator"></a>Static Web Page Generator</h1><p>A Static Web Page Framework takes input files and uses them to build a website.<br>I want to build one that doesn’t require compilation or installation.</p>
+<p>This is the idea I have put the most thought into, which is why I have<br>presented it last. I wanted to give the other ideas I have a chance in the sun<br>in case someone else had interest in them. I don’t want my excited energy to<br>dissuade anyone else from thinking about my other ideas. I think they’re both<br>fun ideas that could be really interesting to play with, but this is the idea<br>that I’m the most interested in doing.</p>
+<p>Over the summer, a friend of mine asked for help building a website for her<br>business. That website is still in progress, but over the course of getting<br>it to it’s current status (bug fixes), I learned a lot about creating a web page<br>by dynamically loading information into a view using JSON files. I still think<br>I can do better.</p>
+<p>I want to create a general purpose static web page framework along these same<br>principles. All of the processing of data will be handled by the web browser.<br>This makes my project significantly different from something like Hexo. With<br>most Static Website Generators, you write files, and then run some form of<br>compilation. HTML files are output, and those are used for the website.</p>
+<p>My project will require no compilation. A single HTML file will use JavaScript<br>to inject information into HTML elements. Before I have done this using JSON<br>files that contain the information that is to be injected. I would like to<br>use something more human readable like markdown. The specific tools that I would<br>use to make this happen would be Mustache.js, jQuery, and Markdown.js.</p>
+<p>Milestones would be structured around how I set up my initial project. What I am<br>planning to do is to create a single JSON object that contains all the<br>information necessary to create a website. Each step of building my project<br>would entail removing a component from the object and moving it into another<br>file structure.</p>
+<p><img src="http://i.imgur.com/TRwYl69.jpg" alt="I may or may not have left the pen in the shot because I think it looks nifty"></p>
+<p>The first milestone will be setting up the website to work on this base object.<br>Functionality can be drawn out of this object into other files for future<br>milestones. This first milestone is rather large because it includes such things<br>as writing the HTML code that will be used to display the content and<br>integrating Markdown.js and Mustache.js to turn the content into HTML. I expect<br>this to take two weeks.</p>
+<p>The second milestone will be a simple one. I want to draw the site information<br>away from the basic starter object into its own file. This will include things<br>that are the same on every single page that the user visits like the title of<br>the website, the favicon, and the contact information of the site owner. This<br>milestone won’t take very long because it is so simple. I expect it to take a<br>week. This might seem like a lot of time to dedicate to this task, but I expect<br>there to be ideas I have to make this feature even better and more human<br>readable while I work on it.</p>
+<p>The third milestone will be to draw content out of the main object and separate<br>it into markdown files. The content of files on a server can be accessed using<br>AJAX as long as the file name is known. This is why the filenames will still be<br>in the main object. In fact, at this point in the project, the filenames will be<br>the only things left in the object. I already have experience doing this, but it<br>still takes quite a bit of code to do. I think it will take me about two weeks.</p>
+<p>The fourth milestone will be the hardest one. I want to get rid of the object<br>entirely. I would like to use a web server’s directory listing to gather the<br>names of all of the markdown files so that the JavaScript can pull content from<br>these files without being told explicitly what their names are. I think this<br>should take four weeks.</p>
+<p>The final milestone will be to modify the project so that when someone searches<br>the web the content of the site can be queried by the search engine of their<br>choice. I’m not very sure how hard this will be, so I would like to dedicate<br>as much time to it as I did for the web server directory listing milestone.</p>
+<p>All in all, this leaves three weeks for testing and fixing, as well as room for<br>if one of these tasks presents unforeseen problems and takes more time to work<br>on than was originally budgeted. That’s pretty accurate to how I want my<br>senior project to be structured, so I feel really comfortable with this idea<br>being the one I go forward with. I might be favoring it unfairly, but I just<br>think it fits the structure of this course better than my other ideas, and is<br>the one I have the most familiarity with.</p>
+<p>A human readable compilation free static website framework could be a really<br>great thing for people hosting websites on servers and don’t know much about<br>creating web pages. It would provide a path for minimal set up, though it would<br>decrease the responsiveness and performance of the website. This is a sacrifice<br>I am willing to make for the sake of a fun project that does something<br>interesting.</p>
+<p>[object]: <a href="http://imgur.com/TRwYl69" target="_blank" rel="external">http://imgur.com/TRwYl69</a> “I may or may not have included my pen in this picture because I think it looks<br>really cool”</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/brainstorming-JavaScript-planning/" rel="tag">#brainstorming, JavaScript, planning</a>
+          
+        </div>
+      
+
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Travis Rigg" />
+          <p class="site-author-name" itemprop="name">Travis Rigg</p>
+          <p class="site-description motion-element" itemprop="description">This is my development blog. It is basically a scratchpad.</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Twitter-Bot-Detector"><span class="nav-number">1.</span> <span class="nav-text">Twitter Bot Detector</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Email-Client"><span class="nav-number">2.</span> <span class="nav-text">Email Client</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-Web-Page-Generator"><span class="nav-number">3.</span> <span class="nav-text">Static Web Page Generator</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Travis Rigg</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
