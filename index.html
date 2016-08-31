@@ -238,6 +238,116 @@
             
               
                 
+                <a class="post-title-link" href="/2016/08/30/Static-Website-Generation-Framework/" itemprop="url">
+                  Static Website Generation Framework
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-08-30T22:11:29-04:00" content="2016-08-30">
+              2016-08-30
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>I have chosed to build a static website generation framework. Users give the framework simple inputs and a website is born.</p>
+<h1 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h1><p>Any project requires the usage of tools. You don’t build cabinents with your bare hands. You use a hammer.</p>
+<h2 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h2><p>In order to grab files with content from the server, AJAX will be needed. jQuery as a library provides this with the least amount of headache.</p>
+<h2 id="Mustache-js"><a href="#Mustache-js" class="headerlink" title="Mustache.js"></a>Mustache.js</h2><p>Static website generators use templating engines to describe their page layouts. <a href="https://hexo.io/docs/templates.html" target="_blank" rel="external">Hexo</a> uses some form of ERB inspired template. <a href="https://jekyllrb.com/docs/templates/" target="_blank" rel="external">Jekyll</a> uses the liquid templating engine. I would like to use Mustache because it is simple, readable, flexible, light weight, and portable. jQuery comes with a templating system that I could use without adding anymore weight to my project, but it is awful and I don’t want to deal with it.</p>
+<h2 id="Markdown-js"><a href="#Markdown-js" class="headerlink" title="Markdown.js"></a>Markdown.js</h2><p><a href="https://github.com/hexojs/hexo-renderer-marked" target="_blank" rel="external">Hexo</a> uses its own markdown rederer. <a href="https://jekyllrb.com/docs/posts/" target="_blank" rel="external">Jekyll</a> also uses markdown. While this isn’t the only option, as a static web page generator could potentially use any lightweight markup language, it is the best option for a couple of reasons. Markdown has deep penetration thanks to GitHub and Reddit. It’s also extremely simple and human readable, which is why those two organizations picked it in the first place.</p>
+<h1 id="Time-Estimate"><a href="#Time-Estimate" class="headerlink" title="Time Estimate"></a>Time Estimate</h1><ol>
+<li>2 Weeks: build initial website</li>
+<li>1 Week:  site information file</li>
+<li>1 Week:  markdown content</li>
+<li>4 Weeks: dynamic file scanning</li>
+<li>4 Weeks: search engine visibility</li>
+</ol>
+<h1 id="Intermediate-Goals"><a href="#Intermediate-Goals" class="headerlink" title="Intermediate Goals"></a>Intermediate Goals</h1><ol>
+<li>Working website</li>
+<li>Markdown based website</li>
+<li>Purely dynamic website</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/08/27/Three-Project-Ideas/" itemprop="url">
                   Three Project Ideas
                 </a>
@@ -320,7 +430,7 @@
 <p>The second milestone will be a simple one. I want to draw the site information away from the basic starter object into its own file. This will include things that are the same on every single page that the user visits like the title of the website, the favicon, and the contact information of the site owner. This milestone won’t take very long because it is so simple. I expect it to take a week. This might seem like a lot of time to dedicate to this task, but I expect there to be ideas I have to make this feature even better and more human readable while I work on it.</p>
 <p>The third milestone will be to draw content out of the main object and separate it into markdown files. The content of files on a server can be accessed using AJAX as long as the file name is known. This is why the filenames will still be in the main object. In fact, at this point in the project, the filenames will be the only things left in the object. I already have experience doing this, but it still takes quite a bit of code to do. I think it will take me about two weeks.</p>
 <p>The fourth milestone will be the hardest one. I want to get rid of the object entirely. I would like to use a web server’s directory listing to gather the names of all of the markdown files so that the JavaScript can pull content from these files without being told explicitly what their names are. I think this should take four weeks.</p>
-<p>The final milestone will be to modify the project so that when someone searches the web the content of the site can be queried by the search engine of their choice. I’m not very sure how hard this will be, so I would like to dedicate as much time to it as I did for the web server directory listing milestone.<br>All in all, this leaves three weeks for testing and fixing, as well as room for if one of these tasks presents unforeseen problems and takes more time to work on than was originally budgeted. That’s pretty accurate to how I want my senior project to be structured, so I feel really comfortable with this idea being the one I go forward with. I might be favoring it unfairly, but I just think it fits the structure of this course better than my other ideas, and is the one I have the most familiarity with.</p>
+<p>The final milestone will be to modify the project so that when someone searches the web the content of the site can be queried by the search engine of their choice. I’m not very sure how hard this will be, so I would like to dedicate as much time to it as I did for the web server directory listing milestone. All in all, this leaves three weeks for testing and fixing, as well as room for if one of these tasks presents unforeseen problems and takes more time to work on than was originally budgeted. That’s pretty accurate to how I want my senior project to be structured, so I feel really comfortable with this idea being the one I go forward with. I might be favoring it unfairly, but I just think it fits the structure of this course better than my other ideas, and is the one I have the most familiarity with.</p>
 <p>A human readable compilation free static website framework could be a really great thing for people hosting websites on servers and don’t know much about creating web pages. It would provide a path for minimal set up, though it would decrease the responsiveness and performance of the website. This is a sacrifice I am willing to make for the sake of a fun project that does something interesting.</p>
 
           
@@ -391,7 +501,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -401,7 +511,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
