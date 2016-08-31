@@ -1,290 +1,28 @@
-<!doctype html>
-
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Travis Rigg&#39;s Blogging and Development Extravaganza</title>
+  <subtitle>A 5 ring circus featuring discussions about writing code for programs</subtitle>
+  <link href="/atom.xml" rel="self"/>
   
-
-
-<html class="theme-next muse use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
+  <link href="riggt.github.io/"/>
+  <updated>2016-08-31T15:05:51.066Z</updated>
+  <id>riggt.github.io/</id>
   
-  
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
+  <author>
+    <name>Travis Rigg</name>
     
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Static Website Generation Framework</title>
+    <link href="riggt.github.io/2016/08/30/Static-Website-Generation-Framework/"/>
+    <id>riggt.github.io/2016/08/30/Static-Website-Generation-Framework/</id>
+    <published>2016-08-31T02:11:29.000Z</published>
+    <updated>2016-08-31T15:05:51.066Z</updated>
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Travis Rigg's Blogging and Development Extravaganza" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-
-
-<meta name="description" content="This is my development blog. It is basically a scratchpad.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Travis Rigg's Blogging and Development Extravaganza">
-<meta property="og:url" content="riggt.github.io/index.html">
-<meta property="og:site_name" content="Travis Rigg's Blogging and Development Extravaganza">
-<meta property="og:description" content="This is my development blog. It is basically a scratchpad.">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Travis Rigg's Blogging and Development Extravaganza">
-<meta name="twitter:description" content="This is my development blog. It is basically a scratchpad.">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: 'Author'
-    }
-  };
-</script>
-
-
-
-
-  <link rel="canonical" href="riggt.github.io/"/>
-
-  <title> Travis Rigg's Blogging and Development Extravaganza </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Travis Rigg's Blogging and Development Extravaganza</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-  <p class="site-subtitle">A 5 ring circus featuring discussions about writing code for programs</p>
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/30/Static-Website-Generation-Framework/" itemprop="url">
-                  Static Website Generation Framework
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-08-30T22:11:29-04:00" content="2016-08-30">
-              2016-08-30
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>I have chosen to build a static website generation framework. Users give the framework simple inputs and a website is born.</p>
+    <content type="html"><![CDATA[<p>I have chosen to build a static website generation framework. Users give the framework simple inputs and a website is born.</p>
 <h1 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h1><p>Any project requires the usage of tools. You don’t build cabinents with your bare hands. You use a hammer.</p>
 <h2 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h2><p>In order to grab files with content from the server, AJAX will be needed. jQuery as a library provides this with the least amount of headache.</p>
 <h2 id="Mustache-js"><a href="#Mustache-js" class="headerlink" title="Mustache.js"></a>Mustache.js</h2><p>Static website generators use templating engines to describe their page layouts. <a href="https://hexo.io/docs/templates.html" target="_blank" rel="external">Hexo</a> uses some form of ERB inspired template. <a href="https://jekyllrb.com/docs/templates/" target="_blank" rel="external">Jekyll</a> uses the liquid templating engine. I would like to use Mustache because it is simple, readable, flexible, light weight, and portable. jQuery comes with a templating system that I could use without adding anymore weight to my project, but it is awful and I don’t want to deal with it.</p>
@@ -302,100 +40,38 @@
 <li>Markdown based website</li>
 <li>Purely dynamic website</li>
 </ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
+]]></content>
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
+    <summary type="html">
     
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/27/Three-Project-Ideas/" itemprop="url">
-                  Three Project Ideas
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-08-27T22:03:24-04:00" content="2016-08-27">
-              2016-08-27
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
+      &lt;p&gt;I have chosen to build a static website generation framework. Users give the framework simple inputs and a website is born.&lt;/p&gt;
+&lt;h1 id=&quot;T
     
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>This is my first post on this blog, so I think I’d like to introduce it just a little bit before I get things going. This is my development blog. I post about things I am working on. Right now, I’m working on my senior capstone at Berea College. These are a few ideas that I’ve been thinking about to work on.</p>
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+    
+      <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Development" scheme="riggt.github.io/tags/Development/"/>
+    
+      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Three Project Ideas</title>
+    <link href="riggt.github.io/2016/08/27/Three-Project-Ideas/"/>
+    <id>riggt.github.io/2016/08/27/Three-Project-Ideas/</id>
+    <published>2016-08-28T02:03:24.000Z</published>
+    <updated>2016-08-29T17:06:29.733Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is my first post on this blog, so I think I’d like to introduce it just a little bit before I get things going. This is my development blog. I post about things I am working on. Right now, I’m working on my senior capstone at Berea College. These are a few ideas that I’ve been thinking about to work on.</p>
 <h1 id="Twitter-Bot-Detector"><a href="#Twitter-Bot-Detector" class="headerlink" title="Twitter Bot Detector"></a>Twitter Bot Detector</h1><p>Someone in our class pitched the idea of a Twitter Bot as a project. I, being a contrarian, immediately thought to myself that I should build a Twitter Bot Detector.</p>
 <p>After looking into the viability of this project, I found that the University of Texas had already done this, so I looked at their work. There are several parts of detecting a twitter bot, all related to different aspects of a bot’s behavior.</p>
 <p>The first thing to look at is how much content is the bot creating, and how much is it regurgitating via retweets. An actual human person will on occasion have something to say about something. It might be how their day was, it might be what they had for breakfast, it might be an excited tweet about the future times. Whatever it is, a human person will do this along side retweeting things that they found nifty.</p>
@@ -435,235 +111,21 @@
 <p>The fourth milestone will be the hardest one. I want to get rid of the object entirely. I would like to use a web server’s directory listing to gather the names of all of the markdown files so that the JavaScript can pull content from these files without being told explicitly what their names are. I think this should take four weeks.</p>
 <p>The final milestone will be to modify the project so that when someone searches the web the content of the site can be queried by the search engine of their choice. I’m not very sure how hard this will be, so I would like to dedicate as much time to it as I did for the web server directory listing milestone. All in all, this leaves three weeks for testing and fixing, as well as room for if one of these tasks presents unforeseen problems and takes more time to work on than was originally budgeted. That’s pretty accurate to how I want my senior project to be structured, so I feel really comfortable with this idea being the one I go forward with. I might be favoring it unfairly, but I just think it fits the structure of this course better than my other ideas, and is the one I have the most familiarity with.</p>
 <p>A human readable compilation free static website framework could be a really great thing for people hosting websites on servers and don’t know much about creating web pages. It would provide a path for minimal set up, though it would decrease the responsiveness and performance of the website. This is a sacrifice I am willing to make for the sake of a fun project that does something interesting.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
+]]></content>
     
-  </section>
-
+    <summary type="html">
+    
+      &lt;p&gt;This is my first post on this blog, so I think I’d like to introduce it just a little bit before I get things going. This is my developme
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="brainstorming" scheme="riggt.github.io/tags/brainstorming/"/>
+    
+      <category term="planning" scheme="riggt.github.io/tags/planning/"/>
+    
+  </entry>
   
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="Travis Rigg" />
-          <p class="site-author-name" itemprop="name">Travis Rigg</p>
-          <p class="site-description motion-element" itemprop="description">This is my development blog. It is basically a scratchpad.</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
-          </div>
-
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">8</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-      </section>
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2016</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Travis Rigg</span>
-</div>
-
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
-
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
-
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-  
-  
-
-  
-
-  
-
-  
-
-</body>
-</html>
+</feed>
