@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Planning,JavaScript,HTML,Framework,Web Development,Development," />
+  <meta name="keywords" content="Planning,Agile,SCRUM,Design,Data Design," />
 
 
 
@@ -86,19 +86,19 @@
 
 
 
-<meta name="description" content="I have chosen to build a static website generation framework. Users give the framework simple inputs and a website is born.
-ToolsAny project requires the usage of tools. You don’t build cabinents with">
+<meta name="description" content="We watched this video about agile development and design. I have thoughts.
+ConcernsOne of the key points of the video is that whatever component of your project is resistent to change, you should figu">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Static Website Generation Framework">
-<meta property="og:url" content="riggt.github.io/2016/08/30/Static-Website-Generation-Framework/index.html">
+<meta property="og:title" content="Agile Development and You">
+<meta property="og:url" content="riggt.github.io/2016/09/13/Agile-Development-and-You/index.html">
 <meta property="og:site_name" content="Travis Rigg's Blogging and Development Extravaganza">
-<meta property="og:description" content="I have chosen to build a static website generation framework. Users give the framework simple inputs and a website is born.
-ToolsAny project requires the usage of tools. You don’t build cabinents with">
-<meta property="og:updated_time" content="2016-08-31T15:05:51.066Z">
+<meta property="og:description" content="We watched this video about agile development and design. I have thoughts.
+ConcernsOne of the key points of the video is that whatever component of your project is resistent to change, you should figu">
+<meta property="og:updated_time" content="2016-09-14T01:45:08.672Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Static Website Generation Framework">
-<meta name="twitter:description" content="I have chosen to build a static website generation framework. Users give the framework simple inputs and a website is born.
-ToolsAny project requires the usage of tools. You don’t build cabinents with">
+<meta name="twitter:title" content="Agile Development and You">
+<meta name="twitter:description" content="We watched this video about agile development and design. I have thoughts.
+ConcernsOne of the key points of the video is that whatever component of your project is resistent to change, you should figu">
 
 
 
@@ -119,9 +119,9 @@ ToolsAny project requires the usage of tools. You don’t build cabinents with">
 
 
 
-  <link rel="canonical" href="riggt.github.io/2016/08/30/Static-Website-Generation-Framework/"/>
+  <link rel="canonical" href="riggt.github.io/2016/09/13/Agile-Development-and-You/"/>
 
-  <title> Static Website Generation Framework | Travis Rigg's Blogging and Development Extravaganza </title>
+  <title> Agile Development and You | Travis Rigg's Blogging and Development Extravaganza </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -241,7 +241,7 @@ ToolsAny project requires the usage of tools. You don’t build cabinents with">
             
             
               
-                Static Website Generation Framework
+                Agile Development and You
               
             
           </h1>
@@ -253,8 +253,8 @@ ToolsAny project requires the usage of tools. You don’t build cabinents with">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-08-30T22:11:29-04:00" content="2016-08-30">
-              2016-08-30
+            <time itemprop="dateCreated" datetime="2016-09-13T20:40:04-04:00" content="2016-09-13">
+              2016-09-13
             </time>
           </span>
 
@@ -281,24 +281,14 @@ ToolsAny project requires the usage of tools. You don’t build cabinents with">
       
 
       
-        <p>I have chosen to build a static website generation framework. Users give the framework simple inputs and a website is born.</p>
-<h1 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h1><p>Any project requires the usage of tools. You don’t build cabinents with your bare hands. You use a hammer.</p>
-<h2 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h2><p>In order to grab files with content from the server, AJAX will be needed. jQuery as a library provides this with the least amount of headache.</p>
-<h2 id="Mustache-js"><a href="#Mustache-js" class="headerlink" title="Mustache.js"></a>Mustache.js</h2><p>Static website generators use templating engines to describe their page layouts. <a href="https://hexo.io/docs/templates.html" target="_blank" rel="external">Hexo</a> uses some form of ERB inspired template. <a href="https://jekyllrb.com/docs/templates/" target="_blank" rel="external">Jekyll</a> uses the liquid templating engine. I would like to use Mustache because it is simple, readable, flexible, light weight, and portable. jQuery comes with a templating system that I could use without adding anymore weight to my project, but it is awful and I don’t want to deal with it.</p>
-<h2 id="Markdown-js"><a href="#Markdown-js" class="headerlink" title="Markdown.js"></a>Markdown.js</h2><p><a href="https://github.com/hexojs/hexo-renderer-marked" target="_blank" rel="external">Hexo</a> uses its own markdown rederer. <a href="https://jekyllrb.com/docs/posts/" target="_blank" rel="external">Jekyll</a> also uses markdown. While this isn’t the only option, as a static web page generator could potentially use any lightweight markup language(LML), it is the best option for a couple of reasons. Markdown has deep penetration thanks to GitHub and Reddit. It’s also extremely simple and human readable, which is why those two organizations picked it in the first place.</p>
-<p>Other lightweight markdown languages I could use that aren’t Markdown include <a href="http://docutils.sourceforge.net/rst.html" target="_blank" rel="external">reStructuredText</a> which is the prefered LML of the Python community. I feel however that this markup language is a little too complicated and doesn’t have enough penetration that many people would be familiar with it. A static web generation framework should require as little new learning on the part of the user as possible.</p>
-<h1 id="Time-Estimate"><a href="#Time-Estimate" class="headerlink" title="Time Estimate"></a>Time Estimate</h1><ol>
-<li>2 Weeks: build initial website</li>
-<li>1 Week:  site information file</li>
-<li>1 Week:  markdown content</li>
-<li>4 Weeks: dynamic file scanning</li>
-<li>4 Weeks: search engine visibility</li>
-</ol>
-<h1 id="Intermediate-Goals"><a href="#Intermediate-Goals" class="headerlink" title="Intermediate Goals"></a>Intermediate Goals</h1><ol>
-<li>Working website</li>
-<li>Markdown based website</li>
-<li>Purely dynamic website</li>
-</ol>
+        <p>We watched <a href="https://youtu.be/VjKYO6DP3fo" target="_blank" rel="external">this video</a> about agile development and design. I have thoughts.</p>
+<h1 id="Concerns"><a href="#Concerns" class="headerlink" title="Concerns"></a>Concerns</h1><p>One of the key points of the video is that whatever component of your project is resistent to change, you should figure out how to make it more fluid. The issue I was facing was that any change in my design will require changes in my JSON files. I was concerned that this was too much work for any design changes to my program.</p>
+<p>As I thought about how I would fix this problem, it occurred to me that I could use my old JSON examples of proper objects as examples of failure states. Right now I have only thought of two conditions that should force a website made by my framework to fail. If my design changes, my old success cases should hypothetically fail.</p>
+<p>Thankfully a communication with my professor calmed me down. He explained to me that a design is a design. It by its nature will be resistent to change, but when it does, it’s everything else that should respond fluidly. In thinking about it, I also came to the conclusion that editing my JSON files will be just as easy as editing injection scripts for a traditional database or setting up an object in a test suite.</p>
+<h1 id="Change-and-Me"><a href="#Change-and-Me" class="headerlink" title="Change and Me"></a>Change and Me</h1><p>With past projects, making changes to the design felt impossible at best. Hopefully my experience working on Pyramid and Atom will have taught me some lessons.</p>
+<p>Pyramid in particular was interesting. They thought of the documentation as a seperate project from Pyramid itself. The documentation was just as subject to change as the codebase. There wasn’t a changelog outside if what would have been documented by the issues, pull requests, and merges. If there was a release of Pyramid, there would be a review session to make sure the documentation was stable, and then Pyramid and the documentation would have a release the same day.</p>
+<p>This was much more structured than what happened with Atom. Atom had documentation that would get edited if someone in the wild found something that didn’t match reality. This was much more annoying because mismatches between the two felt like oversights whereas mistakes in Pyramid’s documentation felt like honest mistakes.</p>
+<p>I think for my project I prefer the Pyramid style. I think I’ll create a tast for every milestone to create and review documentation. That isn’t time I had budgeted for, so I’ll really have to think about how long this process should take. 4 hours for each milestone might be reasonable.</p>
 
       
     </div>
@@ -323,15 +313,13 @@ ToolsAny project requires the usage of tools. You don’t build cabinents with">
           
             <a href="/tags/Planning/" rel="tag">#Planning</a>
           
-            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+            <a href="/tags/Agile/" rel="tag">#Agile</a>
           
-            <a href="/tags/HTML/" rel="tag">#HTML</a>
+            <a href="/tags/SCRUM/" rel="tag">#SCRUM</a>
           
-            <a href="/tags/Framework/" rel="tag">#Framework</a>
+            <a href="/tags/Design/" rel="tag">#Design</a>
           
-            <a href="/tags/Web-Development/" rel="tag">#Web Development</a>
-          
-            <a href="/tags/Development/" rel="tag">#Development</a>
+            <a href="/tags/Data-Design/" rel="tag">#Data Design</a>
           
         </div>
       
@@ -340,17 +328,13 @@ ToolsAny project requires the usage of tools. You don’t build cabinents with">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/27/Three-Project-Ideas/" rel="next" title="Three Project Ideas">
-                <i class="fa fa-chevron-left"></i> Three Project Ideas
+              <a href="/2016/08/30/Static-Website-Generation-Framework/" rel="next" title="Static Website Generation Framework">
+                <i class="fa fa-chevron-left"></i> Static Website Generation Framework
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/09/13/Agile-Development-and-You/" rel="prev" title="Agile Development and You">
-                Agile Development and You <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -464,7 +448,7 @@ ToolsAny project requires the usage of tools. You don’t build cabinents with">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Tools"><span class="nav-number">1.</span> <span class="nav-text">Tools</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery"><span class="nav-number">1.1.</span> <span class="nav-text">jQuery</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mustache-js"><span class="nav-number">1.2.</span> <span class="nav-text">Mustache.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-js"><span class="nav-number">1.3.</span> <span class="nav-text">Markdown.js</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Time-Estimate"><span class="nav-number">2.</span> <span class="nav-text">Time Estimate</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Intermediate-Goals"><span class="nav-number">3.</span> <span class="nav-text">Intermediate Goals</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Concerns"><span class="nav-number">1.</span> <span class="nav-text">Concerns</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Change-and-Me"><span class="nav-number">2.</span> <span class="nav-text">Change and Me</span></a></li></ol></div>
             
           </div>
         </section>
