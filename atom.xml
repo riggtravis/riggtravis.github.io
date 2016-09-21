@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="riggt.github.io/"/>
-  <updated>2016-09-16T03:24:43.136Z</updated>
+  <updated>2016-09-21T01:44:38.724Z</updated>
   <id>riggt.github.io/</id>
   
   <author>
@@ -14,6 +14,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spike Report</title>
+    <link href="riggt.github.io/2016/09/20/Spike-Report/"/>
+    <id>riggt.github.io/2016/09/20/Spike-Report/</id>
+    <published>2016-09-21T00:13:56.000Z</published>
+    <updated>2016-09-21T01:44:38.724Z</updated>
+    
+    <content type="html"><![CDATA[<p>This past has been a rush to get all the things I had wanted to create into a<br>reality of some shape. I hope to describe what’s done and what there is to do.</p>
+<h1 id="index-html"><a href="#index-html" class="headerlink" title="index.html"></a>index.html</h1><p>This is the first file that the browser receives from the server. Its job is to<br>deliver to the browser all the JavaScript that I am writing to make the really<br>cool dynamic work I’m doing appear. If I excluded the JavaScript I’m writing,<br>my index.html file would appear as totally blank in a web browser.</p>
+<p>But surely it contains something, you must be thinking. Actually, yes. It is<br>full of elements whose inner HTML gets set by the JavaScript.</p>
+<h1 id="glacialus-js"><a href="#glacialus-js" class="headerlink" title="glacialus.js"></a>glacialus.js</h1><p>Okay, that’s enough talking about what the JavaScript does to another file.<br>Let’s talk about the JavaScript itself, because that’s pretty cool.</p>
+<p>The first thing I do is create an event listener. Event listeners are chunks of<br>script that get laid onto elements in the Document Object Model. Whenever an<br>action happens to a Docment Object that has a listener, the listener will<br>perform an action. This replaces the older functionality such as adding an<br>“onclick()” attribute to an HTML element.</p>
+<p>The main advantage of an event listener instead of an “onclick()” attribute is<br>that you can put them all together in one readable place. You can also do some<br>really dynamic things such as adding event listeners inside of a for loop. This<br>will become important later when I create a navagation bar (more on that later).</p>
+<p>The particular event listener I have created basically loads a site’s global<br>information. This is information about the site itself, and information about<br>the organization or individual who set up the site. The title of the site, the<br>slogan that the organization uses, their logo, any contact information that a<br>visitor would need to know, the favicon that goes in the tab the page is in,<br>these are examples of global data.</p>
+<p>This initial set of actions also loads the home page. Every website needs a page<br>named “Home.” If a home page is not found, the website will not render. Because<br>there are many times when a search for a page will be performed, I have created<br>a page search function. If a page is found in list, some form of action will be<br>taken. I say some form of action because that is passed to the function as a<br>callback function.</p>
+<p>While I’m describing functions I’ve created, I also have an insert html<br>function. It receives a template, in the form of a mustache file (more on that<br>later), an object, and the name of an element to receive the data. This is an<br>action that happens any time a link is clicked, and is performed multiple times<br>during the site initiation phase. Basic DRY programming, really.</p>
+<p>Another action I found myself performing enough to warrant creating a function<br>for it was adding text to the end of an already populated element. Basically<br>all this function does is pull text from an element, store it in a temporary<br>location, add a string that was passed as an argument, and then put the result<br>into the original element. I could see this being useful later if I decide to<br>introduce blog functionality to my project.</p>
+<p>The heart of my project is a function named “load_page” This is a function that<br>will be called anytime a new page is requested, which will be the most frequent<br>action in my project. Right now all this function does is load some sort of page<br>tite and content to go in the body of the document. In the future I would like<br>to use this function to also populate a navigation bar and introduce event<br>listeners to those links.</p>
+<h1 id="Mustache"><a href="#Mustache" class="headerlink" title="Mustache"></a>Mustache</h1><p>Earlier I mentioned that I was using Mustache templates. Mustache is a<br>templating engine. It’s basically an easy markup to use to create more<br>interesting, interactive web pages. Right now I only have a contact template and<br>a social media links template. Nothing too exciting. Actually, nothing about<br>Mustache is very exciting to talk about. That’s what’s so exciting about it.<br>Using it requires minimal headachage.</p>
+<p>The next template I create will likely be a template for a navbar of some sort.</p>
+<h1 id="To-Do"><a href="#To-Do" class="headerlink" title="To Do"></a>To Do</h1><p>I’m sure you’ve figured this out by now, but I’m probably going to be doing the<br>navigation bar next. I consider the navigation bar’s functionality to be just as<br>critical as the load page function. The reason for this is that the navigation<br>bar basically acts as a set of listeners whose only job it is to run the load<br>page function.</p>
+<p>Interestingly, I also think that the most likely way to load the navigation bar<br>is to use the load page function. When a page is loaded, it in some way needs to<br>be acknowledged as the current page, so loading the navigation bar with the<br>current page so that the bar reflects the page makes the most sense to me.</p>
+<p>I’m not excactly sure how to end this blog post. Sooooooooooooooooooooooooo…<br>BYE!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This past has been a rush to get all the things I had wanted to create into a&lt;br&gt;reality of some shape. I hope to describe what’s done an
+    
+    </summary>
+    
+    
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Development" scheme="riggt.github.io/tags/Development/"/>
+    
+      <category term="Report" scheme="riggt.github.io/tags/Report/"/>
+    
+      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+    
+      <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
+    
+      <category term="Initial Development" scheme="riggt.github.io/tags/Initial-Development/"/>
+    
+  </entry>
   
   <entry>
     <title>Regarding Scanners and my Latest Two Posts</title>
@@ -212,8 +260,6 @@
     </summary>
     
     
-      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
-    
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
@@ -223,6 +269,8 @@
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
+    
+      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
     
   </entry>
   
@@ -282,9 +330,9 @@
     </summary>
     
     
-      <category term="brainstorming" scheme="riggt.github.io/tags/brainstorming/"/>
-    
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="brainstorming" scheme="riggt.github.io/tags/brainstorming/"/>
     
       <category term="planning" scheme="riggt.github.io/tags/planning/"/>
     
