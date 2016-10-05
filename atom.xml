@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="riggt.github.io/"/>
-  <updated>2016-09-21T01:44:38.724Z</updated>
+  <updated>2016-10-05T16:02:44.357Z</updated>
   <id>riggt.github.io/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Measured Work: Unit Tests</title>
+    <link href="riggt.github.io/2016/10/05/Measured-Work-Unit-Tests/"/>
+    <id>riggt.github.io/2016/10/05/Measured-Work-Unit-Tests/</id>
+    <published>2016-10-05T15:52:36.000Z</published>
+    <updated>2016-10-05T16:02:44.357Z</updated>
+    
+    <content type="html"><![CDATA[<p>We are currently experiencing a period of steady work, intended to advance our<br>projects further. I am currently very near to a milestone point in my project.</p>
+<h1 id="Unit-Testing"><a href="#Unit-Testing" class="headerlink" title="Unit Testing"></a>Unit Testing</h1><p>I am very close to finishing up with the writing of unit tests. I am using<br>QUnit to write my tests. It’s a very nice testing framework that utilizes<br>callbacks for running tests. I am very happy with how the tests are written.</p>
+<p>I am looking forward to running my tests so that I can quickly fix any problems<br>that exist in my code base and move forward. I am hoping that by the end of<br>this week that I will be able to write documentation. If I’m really clever,<br>I’ll post my documentation as a blog post.</p>
+<p>I really don’t have much more to say for today. That’s just kind of where I am<br>right now. Nothing new or exciting is going up, but the important things<br>central to the project are happening, even though they’re kind of dry.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;We are currently experiencing a period of steady work, intended to advance our&lt;br&gt;projects further. I am currently very near to a milesto
+    
+    </summary>
+    
+    
+      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+    
+      <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
+    
+      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
+    
+      <category term="QUnit" scheme="riggt.github.io/tags/QUnit/"/>
+    
+  </entry>
   
   <entry>
     <title>Spike Report</title>
@@ -47,15 +81,15 @@
     </summary>
     
     
-      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
     
       <category term="Report" scheme="riggt.github.io/tags/Report/"/>
-    
-      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
     
       <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
     
@@ -213,13 +247,13 @@
     </summary>
     
     
-      <category term="Design" scheme="riggt.github.io/tags/Design/"/>
-    
       <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
     
       <category term="Agile" scheme="riggt.github.io/tags/Agile/"/>
     
       <category term="SCRUM" scheme="riggt.github.io/tags/SCRUM/"/>
+    
+      <category term="Design" scheme="riggt.github.io/tags/Design/"/>
     
       <category term="Data Design" scheme="riggt.github.io/tags/Data-Design/"/>
     
@@ -260,17 +294,17 @@
     </summary>
     
     
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
+    
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
     
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
-    
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
-    
-      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
     
   </entry>
   
