@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="riggt.github.io/"/>
-  <updated>2016-10-07T16:22:22.547Z</updated>
+  <updated>2016-10-10T17:14:02.939Z</updated>
   <id>riggt.github.io/</id>
   
   <author>
@@ -14,6 +14,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AJAX Testing; Synchronousity</title>
+    <link href="riggt.github.io/2016/10/10/AJAX-Testing-Synchronousity/"/>
+    <id>riggt.github.io/2016/10/10/AJAX-Testing-Synchronousity/</id>
+    <published>2016-10-10T16:46:33.000Z</published>
+    <updated>2016-10-10T17:14:02.939Z</updated>
+    
+    <content type="html"><![CDATA[<p>Today I will address concerns I have about how I am spending my time and the<br>next hurdle I have to overcome. In that order.</p>
+<h1 id="How-I-Am-Spending-My-Time"><a href="#How-I-Am-Spending-My-Time" class="headerlink" title="How I Am Spending My Time"></a>How I Am Spending My Time</h1><p>I’m at a phase in this project where I am not truly implementing anything.<br>Everything I am doing for the moment is bugfixes. Debugging requires a lot of<br>thought about what exactly it is that is going on. For me, sitting and staring<br>at code doesn’t help me. I have to identify a problem, think about it, address<br>it in a way that I have come up with during the thinking phase, and then<br>identify a new problem.</p>
+<p>This manner of work means that I have short intense bursts of productivity and<br>long periods of reflection. I have not been counting these long periods of<br>reflection in my time totals. The reason I do this is that I work on other<br>things while I reflect on my problems. For example, I might have a problem with<br>an AJAX call, stop counting my time, and then write a paper for another classs.<br>While I am writing that paper, an idea for how to fix my call will pop into my<br>head. I’ll make a note of the idea, and then finish my paper writing session.<br>Once I am free, I’ll start counting my time for Glacialus again until I am done<br>implementing and testing my fix.</p>
+<p>My concern is how little time this means that I have spent on my project in the<br>last week. I only logged six and a half hours toward my project. I’m not sure<br>I’ll be able to keep up with expectations with only this amount of time worked.<br>I also don’t know how to dedicate more time to the project and have it actually<br>be useful.</p>
+<h1 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h1><p>Okay, that’s enough anxiety. Time to talk about real solutions to real<br>problems.</p>
+<p>I wrote some dumb code.</p>
+<p>I should elaborate. I wrote code that ran synchronously when I thought I was<br>writing code that would run asynchronously. This meant that my asynchronous<br>code ran long before the code I had written for it to depend on took effect.<br>Thankfully this problem is seemingly isolated to my test suite. Once I have<br>this problem fixed, I will be able to dedicate a considerable amount of time to<br>actually testing my project.</p>
+<p>Speaking of…</p>
+<h1 id="Testing"><a href="#Testing" class="headerlink" title="Testing"></a>Testing</h1><p>There is only one test left to write and run. That is really exciting for me.<br>Once all of my code is passing all of the tests I have created, I’ll be able to<br>open up my project in a web browser and see how well it truly works. I<br>anticipate making adjustments and fixing problems that I have not forseen, but<br>I am about to be done with a very major milestone. Once this is complete, I<br>will be able to start playing with some truly interesting concepts.</p>
+<p>The next phase of the project after testing is complete is to seperate the<br>description of content and the description of the website into two different<br>files. While this does not sound very exciting in itself, it set me up to work<br>on having seperate markdown content files.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today I will address concerns I have about how I am spending my time and the&lt;br&gt;next hurdle I have to overcome. In that order.&lt;/p&gt;
+&lt;h1 id
+    
+    </summary>
+    
+    
+      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
+    
+      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
+    
+      <category term="Scheduling" scheme="riggt.github.io/tags/Scheduling/"/>
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+  </entry>
   
   <entry>
     <title>A Tragedy of Timing and AJAX</title>
@@ -41,13 +82,13 @@
     </summary>
     
     
-      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
-    
-      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
-    
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
+    
+      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
     
       <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
     
@@ -73,15 +114,15 @@
     </summary>
     
     
+      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
       <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
     
       <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
     
       <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
-    
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
-    
-      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="QUnit" scheme="riggt.github.io/tags/QUnit/"/>
     
@@ -119,11 +160,11 @@
     </summary>
     
     
-      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
-      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
     
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
     
@@ -334,11 +375,11 @@
     
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
-      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
-      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
     
       <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
     
