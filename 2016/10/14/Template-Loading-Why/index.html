@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Measured Work,Unit Testing,Javascript,Web Development,Testing,QUnit," />
+  <meta name="keywords" content="AJAX,JavaScript,Web Development,Testing,Failing in Silence,Staring at Walls,Mustache,File Names,File Systems,Files," />
 
 
 
@@ -86,19 +86,19 @@
 
 
 
-<meta name="description" content="We are currently experiencing a period of steady work, intended to advance ourprojects further. I am currently very near to a milestone point in my project.
-Unit TestingI am very close to finishing up">
+<meta name="description" content="I have reached an extremely difficult sticking point this week, one that I amcurrently seeking help with.
+What it isWhen I try to open mustache files on my server, sometimes I don’t get the filesopene">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Measured Work: Unit Tests">
-<meta property="og:url" content="riggt.github.io/2016/10/05/Measured-Work-Unit-Tests/index.html">
+<meta property="og:title" content="Template Loading, Why?">
+<meta property="og:url" content="riggt.github.io/2016/10/14/Template-Loading-Why/index.html">
 <meta property="og:site_name" content="Travis Rigg's Blogging and Development Extravaganza">
-<meta property="og:description" content="We are currently experiencing a period of steady work, intended to advance ourprojects further. I am currently very near to a milestone point in my project.
-Unit TestingI am very close to finishing up">
-<meta property="og:updated_time" content="2016-10-05T16:02:44.357Z">
+<meta property="og:description" content="I have reached an extremely difficult sticking point this week, one that I amcurrently seeking help with.
+What it isWhen I try to open mustache files on my server, sometimes I don’t get the filesopene">
+<meta property="og:updated_time" content="2016-10-14T23:23:08.344Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Measured Work: Unit Tests">
-<meta name="twitter:description" content="We are currently experiencing a period of steady work, intended to advance ourprojects further. I am currently very near to a milestone point in my project.
-Unit TestingI am very close to finishing up">
+<meta name="twitter:title" content="Template Loading, Why?">
+<meta name="twitter:description" content="I have reached an extremely difficult sticking point this week, one that I amcurrently seeking help with.
+What it isWhen I try to open mustache files on my server, sometimes I don’t get the filesopene">
 
 
 
@@ -119,9 +119,9 @@ Unit TestingI am very close to finishing up">
 
 
 
-  <link rel="canonical" href="riggt.github.io/2016/10/05/Measured-Work-Unit-Tests/"/>
+  <link rel="canonical" href="riggt.github.io/2016/10/14/Template-Loading-Why/"/>
 
-  <title> Measured Work: Unit Tests | Travis Rigg's Blogging and Development Extravaganza </title>
+  <title> Template Loading, Why? | Travis Rigg's Blogging and Development Extravaganza </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -241,7 +241,7 @@ Unit TestingI am very close to finishing up">
             
             
               
-                Measured Work: Unit Tests
+                Template Loading, Why?
               
             
           </h1>
@@ -253,8 +253,8 @@ Unit TestingI am very close to finishing up">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-10-05T11:52:36-04:00" content="2016-10-05">
-              2016-10-05
+            <time itemprop="dateCreated" datetime="2016-10-14T19:08:23-04:00" content="2016-10-14">
+              2016-10-14
             </time>
           </span>
 
@@ -281,10 +281,12 @@ Unit TestingI am very close to finishing up">
       
 
       
-        <p>We are currently experiencing a period of steady work, intended to advance our<br>projects further. I am currently very near to a milestone point in my project.</p>
-<h1 id="Unit-Testing"><a href="#Unit-Testing" class="headerlink" title="Unit Testing"></a>Unit Testing</h1><p>I am very close to finishing up with the writing of unit tests. I am using<br>QUnit to write my tests. It’s a very nice testing framework that utilizes<br>callbacks for running tests. I am very happy with how the tests are written.</p>
-<p>I am looking forward to running my tests so that I can quickly fix any problems<br>that exist in my code base and move forward. I am hoping that by the end of<br>this week that I will be able to write documentation. If I’m really clever,<br>I’ll post my documentation as a blog post.</p>
-<p>I really don’t have much more to say for today. That’s just kind of where I am<br>right now. Nothing new or exciting is going up, but the important things<br>central to the project are happening, even though they’re kind of dry.</p>
+        <p>I have reached an extremely difficult sticking point this week, one that I am<br>currently seeking help with.</p>
+<h1 id="What-it-is"><a href="#What-it-is" class="headerlink" title="What it is"></a>What it is</h1><p>When I try to open mustache files on my server, sometimes I don’t get the files<br>opened that I want. I know that the failure is with the template fetching<br>function because the logic inside the success attribute of the AJAX object that<br>handles such fetching isn’t running.</p>
+<p>All of my other logic works, so I am absolutely sure that the problem is with<br>my template fetching function. But wait! There’s more…</p>
+<h1 id="The-template-fetching-function-works"><a href="#The-template-fetching-function-works" class="headerlink" title="The template fetching function works"></a>The template fetching function works</h1><p>What? How can that be. If the problem is with the template fetching function,<br>how can it possibly be working? Well you see, any time it is required to fetch<br>a template that <em>isn’t</em> the nav_bar template, it works just fine. In fact, it<br>even passes the tests I wrote for it, which of course require it to fetch a<br>template, because, honestly, what would be the point of the test if it didn’t?</p>
+<h1 id="Well-Travis-you’ve-probably-misspelled-the-file-name"><a href="#Well-Travis-you’ve-probably-misspelled-the-file-name" class="headerlink" title="Well, Travis, you’ve probably misspelled the file name"></a>Well, Travis, you’ve probably misspelled the file name</h1><p>Already checked on that, but thanks for the heads up. That’s not the problem.<br>It was also the last alternative that I could think of that could be the<br>problem. I’ve already looked into every other call of the function as well. I<br>can’t discern anything that I’m doing differently for this function call than<br>any other.</p>
+<h1 id="Maybe-work-on-another-problem"><a href="#Maybe-work-on-another-problem" class="headerlink" title="Maybe work on another problem?"></a>Maybe work on another problem?</h1><p>Actually, this is the last bug that I’m trying to quash. I only have two tests<br>that are failing. The ones that are failing are both failing because of the<br>same nav_bar loading error. It’s really annoying. I’m now <em>very</em> far behind<br>the schedule that I had set for myself. I’m definitely going to need to<br>reassess my goals at the end of this trauma, because this has eaten a <em>ton</em> of<br>my time.</p>
 
       
     </div>
@@ -307,17 +309,25 @@ Unit TestingI am very close to finishing up">
       
         <div class="post-tags">
           
-            <a href="/tags/Measured-Work/" rel="tag">#Measured Work</a>
+            <a href="/tags/AJAX/" rel="tag">#AJAX</a>
           
-            <a href="/tags/Unit-Testing/" rel="tag">#Unit Testing</a>
-          
-            <a href="/tags/Javascript/" rel="tag">#Javascript</a>
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
           
             <a href="/tags/Web-Development/" rel="tag">#Web Development</a>
           
             <a href="/tags/Testing/" rel="tag">#Testing</a>
           
-            <a href="/tags/QUnit/" rel="tag">#QUnit</a>
+            <a href="/tags/Failing-in-Silence/" rel="tag">#Failing in Silence</a>
+          
+            <a href="/tags/Staring-at-Walls/" rel="tag">#Staring at Walls</a>
+          
+            <a href="/tags/Mustache/" rel="tag">#Mustache</a>
+          
+            <a href="/tags/File-Names/" rel="tag">#File Names</a>
+          
+            <a href="/tags/File-Systems/" rel="tag">#File Systems</a>
+          
+            <a href="/tags/Files/" rel="tag">#Files</a>
           
         </div>
       
@@ -326,17 +336,13 @@ Unit TestingI am very close to finishing up">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/20/Spike-Report/" rel="next" title="Spike Report">
-                <i class="fa fa-chevron-left"></i> Spike Report
+              <a href="/2016/10/10/AJAX-Testing-Synchronousity/" rel="next" title="AJAX Testing; Synchronousity">
+                <i class="fa fa-chevron-left"></i> AJAX Testing; Synchronousity
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/07/A-Tragedy-of-Timing-and-AJAX/" rel="prev" title="A Tragedy of Timing and AJAX">
-                A Tragedy of Timing and AJAX <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -450,7 +456,7 @@ Unit TestingI am very close to finishing up">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Unit-Testing"><span class="nav-number">1.</span> <span class="nav-text">Unit Testing</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#What-it-is"><span class="nav-number">1.</span> <span class="nav-text">What it is</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#The-template-fetching-function-works"><span class="nav-number">2.</span> <span class="nav-text">The template fetching function works</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Well-Travis-you’ve-probably-misspelled-the-file-name"><span class="nav-number">3.</span> <span class="nav-text">Well, Travis, you’ve probably misspelled the file name</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maybe-work-on-another-problem"><span class="nav-number">4.</span> <span class="nav-text">Maybe work on another problem?</span></a></li></ol></div>
             
           </div>
         </section>

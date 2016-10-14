@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="riggt.github.io/"/>
-  <updated>2016-10-10T17:14:02.939Z</updated>
+  <updated>2016-10-14T23:23:08.344Z</updated>
   <id>riggt.github.io/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Template Loading, Why?</title>
+    <link href="riggt.github.io/2016/10/14/Template-Loading-Why/"/>
+    <id>riggt.github.io/2016/10/14/Template-Loading-Why/</id>
+    <published>2016-10-14T23:08:23.000Z</published>
+    <updated>2016-10-14T23:23:08.344Z</updated>
+    
+    <content type="html"><![CDATA[<p>I have reached an extremely difficult sticking point this week, one that I am<br>currently seeking help with.</p>
+<h1 id="What-it-is"><a href="#What-it-is" class="headerlink" title="What it is"></a>What it is</h1><p>When I try to open mustache files on my server, sometimes I don’t get the files<br>opened that I want. I know that the failure is with the template fetching<br>function because the logic inside the success attribute of the AJAX object that<br>handles such fetching isn’t running.</p>
+<p>All of my other logic works, so I am absolutely sure that the problem is with<br>my template fetching function. But wait! There’s more…</p>
+<h1 id="The-template-fetching-function-works"><a href="#The-template-fetching-function-works" class="headerlink" title="The template fetching function works"></a>The template fetching function works</h1><p>What? How can that be. If the problem is with the template fetching function,<br>how can it possibly be working? Well you see, any time it is required to fetch<br>a template that <em>isn’t</em> the nav_bar template, it works just fine. In fact, it<br>even passes the tests I wrote for it, which of course require it to fetch a<br>template, because, honestly, what would be the point of the test if it didn’t?</p>
+<h1 id="Well-Travis-you’ve-probably-misspelled-the-file-name"><a href="#Well-Travis-you’ve-probably-misspelled-the-file-name" class="headerlink" title="Well, Travis, you’ve probably misspelled the file name"></a>Well, Travis, you’ve probably misspelled the file name</h1><p>Already checked on that, but thanks for the heads up. That’s not the problem.<br>It was also the last alternative that I could think of that could be the<br>problem. I’ve already looked into every other call of the function as well. I<br>can’t discern anything that I’m doing differently for this function call than<br>any other.</p>
+<h1 id="Maybe-work-on-another-problem"><a href="#Maybe-work-on-another-problem" class="headerlink" title="Maybe work on another problem?"></a>Maybe work on another problem?</h1><p>Actually, this is the last bug that I’m trying to quash. I only have two tests<br>that are failing. The ones that are failing are both failing because of the<br>same nav_bar loading error. It’s really annoying. I’m now <em>very</em> far behind<br>the schedule that I had set for myself. I’m definitely going to need to<br>reassess my goals at the end of this trauma, because this has eaten a <em>ton</em> of<br>my time.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I have reached an extremely difficult sticking point this week, one that I am&lt;br&gt;currently seeking help with.&lt;/p&gt;
+&lt;h1 id=&quot;What-it-is&quot;&gt;&lt;a 
+    
+    </summary>
+    
+    
+      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
+    
+      <category term="Failing in Silence" scheme="riggt.github.io/tags/Failing-in-Silence/"/>
+    
+      <category term="Staring at Walls" scheme="riggt.github.io/tags/Staring-at-Walls/"/>
+    
+      <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
+    
+      <category term="File Names" scheme="riggt.github.io/tags/File-Names/"/>
+    
+      <category term="File Systems" scheme="riggt.github.io/tags/File-Systems/"/>
+    
+      <category term="Files" scheme="riggt.github.io/tags/Files/"/>
+    
+  </entry>
   
   <entry>
     <title>AJAX Testing; Synchronousity</title>
@@ -44,15 +89,15 @@
     
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
       <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="Scheduling" scheme="riggt.github.io/tags/Scheduling/"/>
     
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
-    
       <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
-    
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
   </entry>
   
@@ -82,13 +127,13 @@
     </summary>
     
     
-      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
-    
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
-    
       <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
     
       <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
+    
+      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
     
@@ -114,15 +159,15 @@
     </summary>
     
     
-      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
-    
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
-    
       <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
     
       <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
     
       <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="QUnit" scheme="riggt.github.io/tags/QUnit/"/>
     
@@ -160,17 +205,17 @@
     </summary>
     
     
-      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
-      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
     
-      <category term="Report" scheme="riggt.github.io/tags/Report/"/>
-    
       <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
+    
+      <category term="Report" scheme="riggt.github.io/tags/Report/"/>
     
       <category term="Initial Development" scheme="riggt.github.io/tags/Initial-Development/"/>
     
@@ -375,11 +420,11 @@
     
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
-      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
-    
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
       <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
+    
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
     
