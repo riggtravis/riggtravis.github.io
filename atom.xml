@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="riggt.github.io/"/>
-  <updated>2016-10-14T23:23:08.344Z</updated>
+  <updated>2016-10-20T23:42:48.809Z</updated>
   <id>riggt.github.io/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript Strings?</title>
+    <link href="riggt.github.io/2016/10/20/JavaScript-Strings/"/>
+    <id>riggt.github.io/2016/10/20/JavaScript-Strings/</id>
+    <published>2016-10-20T23:36:13.000Z</published>
+    <updated>2016-10-20T23:42:48.809Z</updated>
+    
+    <content type="html"><![CDATA[<p>Short post today. More of the same preceding this post.</p>
+<h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><p>I finally noticed something that I was doing differently between my various<br>fetch template function calls. I’ve got different single and double quote<br>usage. I don’t know if this has been my problem, but I am going to spend some<br>time learning about JavaScript. While I feel like I understand very well the<br>way JavaScript handles data structures and functions, there are still aspects<br>of the language that surprise me.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Short post today. More of the same preceding this post.&lt;/p&gt;
+&lt;h1 id=&quot;Strings&quot;&gt;&lt;a href=&quot;#Strings&quot; class=&quot;headerlink&quot; title=&quot;Strings&quot;&gt;&lt;/a&gt;St
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="Debugging" scheme="riggt.github.io/tags/Debugging/"/>
+    
+      <category term="Strings" scheme="riggt.github.io/tags/Strings/"/>
+    
+  </entry>
   
   <entry>
     <title>Template Loading, Why?</title>
@@ -38,13 +65,13 @@
     </summary>
     
     
-      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
-    
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
       <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
       <category term="Failing in Silence" scheme="riggt.github.io/tags/Failing-in-Silence/"/>
     
@@ -87,17 +114,17 @@
     </summary>
     
     
-      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
-    
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
       <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="Scheduling" scheme="riggt.github.io/tags/Scheduling/"/>
     
       <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
   </entry>
   
@@ -127,15 +154,15 @@
     </summary>
     
     
-      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
-    
-      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
-    
       <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
+    
+      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
+    
+      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
     
   </entry>
   
@@ -159,15 +186,15 @@
     </summary>
     
     
-      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
-    
-      <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
-    
-      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
-      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
+      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+    
+      <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
+    
+      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
     
       <category term="QUnit" scheme="riggt.github.io/tags/QUnit/"/>
     
@@ -205,11 +232,11 @@
     </summary>
     
     
-      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
-      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
     
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
     
@@ -418,13 +445,13 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
-    
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
-    
       <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
     
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
       <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
       <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
     
