@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="riggt.github.io/"/>
-  <updated>2016-10-20T23:42:48.809Z</updated>
+  <updated>2016-10-30T19:04:40.394Z</updated>
   <id>riggt.github.io/</id>
   
   <author>
@@ -14,6 +14,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bittersweet</title>
+    <link href="riggt.github.io/2016/10/30/Bittersweet/"/>
+    <id>riggt.github.io/2016/10/30/Bittersweet/</id>
+    <published>2016-10-30T18:40:33.000Z</published>
+    <updated>2016-10-30T19:04:40.394Z</updated>
+    
+    <content type="html"><![CDATA[<p>This post is a rambler. Prepare yourself.</p>
+<h1 id="This-Past-Week…"><a href="#This-Past-Week…" class="headerlink" title="This Past Week…"></a>This Past Week…</h1><p>… has been strange. I feel wooden. With the assistance of Matt Jadud, I made<br>a breakthrough with my project. I am very optimistic about the progress I will<br>be able to make in the upcoming week. I do have some personal matters that I<br>need to attend to first though.</p>
+<p>This past week I feel behind in all of my course work, including a major<br>project that is due early this week. Poor timing was the main<br>culprit. My grandfather passed away on Tuesday. I found this out while I was<br>feverishly ill. Legitimately, I didn’t realize his passing was real for about<br>two days. It still at this point is sinking in.</p>
+<p>I won’t be able to attend the funeral. I’m too far behind in my course work to<br>think of it, and my poor little motorcycle wouldn’t be able to make the trip if<br>I could. This would seem like something that would upset me, but really it<br>isn’t. The last time I said goodbye to my grandfather, I knew it was my last<br>goodbye. His mind was failing him, and I got to say goodbye back when there was<br>still something to say goodbye to. </p>
+<p>My time here at Berea College will be bookended with funerals for relatives who<br>struggled with mental health issues. Almost, these funerals frame my own<br>struggle with mental illness, but not entirely. The challenges that I have had<br>to overcome are challenges that I have to overcome every day for the rest of my<br>life. Taking some time to reflect on this has helped me to recenter my focus.</p>
+<p>Yesterday, I didn’t know how I was going to structure any of the work I needed<br>to get done this week. I had a plan that got wrecked when someone I was<br>counting on backed out on a commitment last minute. Today I’ve had some time to<br>recenter and get back on track. I know that none of the course work I will<br>submit this upcoming week will be very good, but I will submit it. It will all<br>be okay.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This post is a rambler. Prepare yourself.&lt;/p&gt;
+&lt;h1 id=&quot;This-Past-Week…&quot;&gt;&lt;a href=&quot;#This-Past-Week…&quot; class=&quot;headerlink&quot; title=&quot;This Past Wee
+    
+    </summary>
+    
+    
+      <category term="Debugging" scheme="riggt.github.io/tags/Debugging/"/>
+    
+      <category term="Life" scheme="riggt.github.io/tags/Life/"/>
+    
+      <category term="The Flu" scheme="riggt.github.io/tags/The-Flu/"/>
+    
+      <category term="Funerals" scheme="riggt.github.io/tags/Funerals/"/>
+    
+      <category term="Commitments" scheme="riggt.github.io/tags/Commitments/"/>
+    
+      <category term="Family" scheme="riggt.github.io/tags/Family/"/>
+    
+      <category term="Mental Illness" scheme="riggt.github.io/tags/Mental-Illness/"/>
+    
+      <category term="Other Projects" scheme="riggt.github.io/tags/Other-Projects/"/>
+    
+      <category term="Hope" scheme="riggt.github.io/tags/Hope/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript Strings?</title>
@@ -34,9 +77,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
-    
       <category term="Debugging" scheme="riggt.github.io/tags/Debugging/"/>
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="Strings" scheme="riggt.github.io/tags/Strings/"/>
     
@@ -65,13 +108,13 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
-    
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
-      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="Failing in Silence" scheme="riggt.github.io/tags/Failing-in-Silence/"/>
     
@@ -114,17 +157,17 @@
     </summary>
     
     
+      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
+    
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
-      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
       <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="Scheduling" scheme="riggt.github.io/tags/Scheduling/"/>
     
       <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
-    
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
   </entry>
   
@@ -154,15 +197,15 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
-    
-      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
-    
-      <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
+      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
     
       <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
     
-      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
+      <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
     
   </entry>
   
@@ -186,15 +229,15 @@
     </summary>
     
     
-      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
-    
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
-    
-      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
     
       <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
     
-      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
+      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="QUnit" scheme="riggt.github.io/tags/QUnit/"/>
     
@@ -232,15 +275,15 @@
     </summary>
     
     
-      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
-      <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
-    
-      <category term="Development" scheme="riggt.github.io/tags/Development/"/>
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
+    
+      <category term="Development" scheme="riggt.github.io/tags/Development/"/>
     
       <category term="Report" scheme="riggt.github.io/tags/Report/"/>
     
@@ -445,13 +488,13 @@
     </summary>
     
     
-      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
-    
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
-      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
-    
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
+    
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
     
