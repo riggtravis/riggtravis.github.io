@@ -151,17 +151,17 @@
     
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
-      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
-    
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
+      <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
+    
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
     
       <category term="Failing in Silence" scheme="riggt.github.io/tags/Failing-in-Silence/"/>
     
       <category term="Staring at Walls" scheme="riggt.github.io/tags/Staring-at-Walls/"/>
-    
-      <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
     
       <category term="File Names" scheme="riggt.github.io/tags/File-Names/"/>
     
@@ -200,11 +200,11 @@
     
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
       <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="Scheduling" scheme="riggt.github.io/tags/Scheduling/"/>
-    
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
@@ -238,15 +238,15 @@
     </summary>
     
     
+      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
+    
+      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
+    
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
-    
-      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
-    
-      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
     
   </entry>
   
@@ -270,15 +270,15 @@
     </summary>
     
     
+      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
+    
+      <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
+    
       <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
       <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
-    
-      <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
-    
-      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
     
       <category term="QUnit" scheme="riggt.github.io/tags/QUnit/"/>
     
@@ -324,9 +324,9 @@
     
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
     
-      <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
-    
       <category term="Report" scheme="riggt.github.io/tags/Report/"/>
+    
+      <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
     
       <category term="Initial Development" scheme="riggt.github.io/tags/Initial-Development/"/>
     
@@ -537,9 +537,9 @@
     
       <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
     
-      <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
-    
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
+    
+      <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
     
   </entry>
   
