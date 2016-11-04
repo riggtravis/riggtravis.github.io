@@ -1,426 +1,197 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang=en>
 <head>
-  <meta charset="utf-8">
-  
-  <title>Page 2 | Travis Rigg&#39;s Blogging and Development Extravaganza | A 5 ring circus featuring discussions about writing code for programs</title>
-
-  
-  <meta name="author" content="Travis Rigg">
-  
-
-  
-  <meta name="description" content="This is my development blog. It is basically a scratchpad.">
-  
-
-  
-
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  
-
-  <meta property="og:site_name" content="Travis Rigg&#39;s Blogging and Development Extravaganza"/>
-
-  
-  <meta property="og:image" content="/favicon.ico"/>
-  
-
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Travis Rigg&#39;s Blogging and Development Extravaganza" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="This is my development blog. It is basically a scratchpad.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Travis Rigg's Blogging and Development Extravaganza">
+<meta property="og:url" content="riggt.github.io/page/2/index.html">
+<meta property="og:site_name" content="Travis Rigg's Blogging and Development Extravaganza">
+<meta property="og:description" content="This is my development blog. It is basically a scratchpad.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Travis Rigg's Blogging and Development Extravaganza">
+<meta name="twitter:description" content="This is my development blog. It is basically a scratchpad.">
+    
+    
+        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+    
+    <!-- title -->
+    <title>Travis Rigg&#39;s Blogging and Development Extravaganza</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/meslo-LG/styles.css">
+    <link rel="stylesheet" href="/vendor/justified-gallery/justifiedGallery.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- jquery -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
 </head>
 
-
 <body>
-<div class="blog">
-  <div class="content">
-
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">Travis Rigg&#39;s Blogging and Development Extravaganza</a>
-    </h1>
-    <p class="site-description">A 5 ring circus featuring discussions about writing code for programs</p>
-  </div>
-  <nav class="site-navigation">
-    <ul>
-      
-        <li><a href="/">Home</a></li>
-      
-        <li><a href="/archives">Archives</a></li>
-      
-    </ul>
-  </nav>
+    <div class="content index width mx-auto px2 my4">
+    <header id="header">
+    <a href="/">
+        <div class="logo"></div>
+        <div id="title">
+          <h1>
+              Travis Rigg&#39;s Blogging and Development Extravaganza
+          </h1>
+          
+          <h2>
+              A 5 ring circus featuring discussions about writing code for programs
+          </h2>
+          
+        </div>
+    </a>
 </header>
 
-    <main class="site-main posts-loop">
-    
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2016/09/14/Representing-Information/"><span>Representing Information</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/09/14/Representing-Information/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-09-14T16:37:54.000Z">
-          2016-09-14
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
+    <section id="about">
       
-        <p>Most projects deal with information. All web applications do. Mine is one of those.</p>
-<h1 id="My-Model"><a href="#My-Model" class="headerlink" title="My Model"></a>My Model</h1><p>One of the problems I have to tackle with my project is that depending on a website maintainer’s needs, different information will be represented on the website. I needed to figure out what information would always be required, what information would only appear sometimes, and how that information should all look in order for the framework to understand how it should be formatted.</p>
-<p>This means that there isn’t a single schema or entity relational model that describes my project. Instead, there are various valid object compositions with smaller add ons that can be included or excluded depending on the needs of the user. These add ons need to be formatted correctly in order for the website to be constructed.</p>
-<p>In order to represent this dynamic set of data, I created a stack of index cards and got out a piece of paper. Hopefully as we start diving into my model, this way of representing information in a modular way will help to better explain what information is sometimes present and what information should always be present.</p>
-<h2 id="What-data-is-needed"><a href="#What-data-is-needed" class="headerlink" title="What data is needed?"></a>What data is needed?</h2><p>To answer that question, I have a piece of paper with two index cards stapled to it.</p>
-<p><img src="http://i.imgur.com/OB1rVvJ.png" alt="base model" title="This is the base model. This information is absolutely required for the website to display"></p>
-<p>Every website must absolutely have a title. This is the name of the website. For example, if you were to visit <a href="https://www.google.com/" target="_blank" rel="external">https://www.google.com/</a> you would probably call the website as a whole, the one that includes “google.com” in the domain name no matter what page you’re on, as <a href="https://www.google.com/" target="_blank" rel="external">“Google”</a></p>
-<p>Every website has one or many pages. In order to anticipate many pages, I am keeping pages in a list format. A website’s maintainer might only put one page in that list of pages, but it still needs to be in a list format.</p>
-<p>Every page is pretty simple. It has a title and it has content. Its title is its identifier that lets visitors of the website know what they are looking at. Content is the stuff that a visitor would want to look at. For example a page might be titled “Photos” and the content would be actual photos that the users want to look at.</p>
-<p>Every website also needs to have a page titled “Home”. This is so my JavaScript code can know which content should be loaded when a visitor first arrives at a website.</p>
-<h2 id="How-are-the-different-kinds-of-data-related-to-eachother"><a href="#How-are-the-different-kinds-of-data-related-to-eachother" class="headerlink" title="How are the different kinds of data related to eachother?"></a>How are the different kinds of data related to eachother?</h2><p>For this I created a stack of index cards. Let me begin by explaining a slightly basic concept and then a more complicated concept.</p>
-<h3 id="Modules"><a href="#Modules" class="headerlink" title="Modules"></a>Modules</h3><p>This is the more basic concept. I need to explain it first because the more complicated concept is based on this one.</p>
+        <p>This is my development blog. It is basically a scratchpad.</p>
 
       
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/design/">design</a><a href="/tags/models/">models</a><a href="/tags/polymorphism/">polymorphism</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2016/09/14/Representing-Ideas-Post-One/"><span>Representing Ideas: Post One</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/09/14/Representing-Ideas-Post-One/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-09-14T16:07:22.000Z">
-          2016-09-14
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
+      <p style="display: inline">
       
-        <p>Last week we presented our project ideas as well as time frames for how long each milestone should take.</p>
-<p>Mine can be found <a href="https://docs.google.com/presentation/d/1MJsbFR9jXyyolO_t0ncXi5k6k0-4hgj8jirFA6PSxG4/present#slide=id.p" target="_blank" rel="external">here</a>.</p>
-<h1 id="Effect"><a href="#Effect" class="headerlink" title="Effect"></a>Effect</h1><p>I think I was effective in giving information while not overloading my groupmates with specifics in my talking points. I gave explanations for what a milestone actually was rather than what components were necessary to complete it. I most need to be familiar with the specifics. They need to understand the generalities of my project before they can begin to care about my specifics.</p>
-<p>I wish I had done better creating visuals that actually explained what I was doing, but that’s not really how I think through problems. It’s really hard for me to present visuals to explain what I’m thinking to others when how I work through what I’m thinking is with a pen and a piece of paper. Most people would think I was drawing diagrams based on what I just said, but really I’m writing down what problems I’m having with my system or someone else’s existing systems, and then writing down possible solutions.</p>
-<p>I really only start drawing things when I’m worrying about user experience problems, which I will be doing very soon as we start to implement our projects. My first milestone is to create a working website by interpretting a JSON file. The time I will the most be thinking about user experience will be now, so very shortly, I should have drawings for this blog.</p>
-
+        Find me on
+        <ul id="sociallinks">
+          
+            <li><a class="icon" target="_blank" href="http://github.com/probberechts/cactus-dark" title="github"><i class="fa fa-lg fa-github"></i></a></li>
+          
+            <li><a class="icon" target="_blank" href="/" title="twitter"><i class="fa fa-lg fa-twitter"></i></a></li>
+          
+            <li><a class="icon" target="_blank" href="/" title="facebook"><i class="fa fa-lg fa-facebook"></i></a></li>
+          
+            <li><a class="icon" target="_blank" href="/" title="linkedin"><i class="fa fa-lg fa-linkedin"></i></a></li>
+          
+        </ul>
       
+      </p>
+    </section>
+    <section id="writing">
+      <span class="h1"><a href="/archives">Writing</a></span>
+      <ul class="post-list">
+        
+          <li class="post-item">
+              
+    <div class="meta">
+        <time datetime="2016-11-04T16:02:58.000Z" itemprop="datePublished">2016-11-04</time>
     </div>
 
-  </div>
 
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
+              <span>
+    
+        <a class="" href="/2016/11/04/A-New-Direction-Maximizing-Productivity-and-Chances-at-Completion/">A New Direction: Maximizing Productivity and Chances at Completion</a>
     
 
-    
-    
 
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/design/">design</a><a href="/tags/representations/">representations</a><a href="/tags/presentations/">presentations</a>
-    </span>
-    
-
+</span>
+          </li>
+        
+          <li class="post-item">
+              
+    <div class="meta">
+        <time datetime="2016-10-30T18:40:33.000Z" itemprop="datePublished">2016-10-30</time>
     </div>
 
+
+              <span>
     
-  </div>
-</article>
-
-
-
-  <article>
-
-  
+        <a class="" href="/2016/10/30/Bittersweet/">Bittersweet</a>
     
-    <h3 class="article-title"><a href="/2016/09/13/Agile-Development-and-You/"><span>Agile Development and You</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/09/13/Agile-Development-and-You/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-09-14T00:40:04.000Z">
-          2016-09-13
-        </time>
-      </a>
-    </span>
-  </div>
 
 
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>We watched <a href="https://youtu.be/VjKYO6DP3fo" target="_blank" rel="external">this video</a> about agile development and design. I have thoughts.</p>
-<h1 id="Concerns"><a href="#Concerns" class="headerlink" title="Concerns"></a>Concerns</h1><p>One of the key points of the video is that whatever component of your project is resistent to change, you should figure out how to make it more fluid. The issue I was facing was that any change in my design will require changes in my JSON files. I was concerned that this was too much work for any design changes to my program.</p>
-<p>As I thought about how I would fix this problem, it occurred to me that I could use my old JSON examples of proper objects as examples of failure states. Right now I have only thought of two conditions that should force a website made by my framework to fail. If my design changes, my old success cases should hypothetically fail.</p>
-<p>Thankfully a communication with my professor calmed me down. He explained to me that a design is a design. It by its nature will be resistent to change, but when it does, it’s everything else that should respond fluidly. In thinking about it, I also came to the conclusion that editing my JSON files will be just as easy as editing injection scripts for a traditional database or setting up an object in a test suite.</p>
-<h1 id="Change-and-Me"><a href="#Change-and-Me" class="headerlink" title="Change and Me"></a>Change and Me</h1><p>With past projects, making changes to the design felt impossible at best. Hopefully my experience working on Pyramid and Atom will have taught me some lessons.</p>
-<p>Pyramid in particular was interesting. They thought of the documentation as a seperate project from Pyramid itself. The documentation was just as subject to change as the codebase. There wasn’t a changelog outside if what would have been documented by the issues, pull requests, and merges. If there was a release of Pyramid, there would be a review session to make sure the documentation was stable, and then Pyramid and the documentation would have a release the same day.</p>
-<p>This was much more structured than what happened with Atom. Atom had documentation that would get edited if someone in the wild found something that didn’t match reality. This was much more annoying because mismatches between the two felt like oversights whereas mistakes in Pyramid’s documentation felt like honest mistakes.</p>
-<p>I think for my project I prefer the Pyramid style. I think I’ll create a tast for every milestone to create and review documentation. That isn’t time I had budgeted for, so I’ll really have to think about how long this process should take. 4 hours for each milestone might be reasonable.</p>
-
-      
+</span>
+          </li>
+        
+          <li class="post-item">
+              
+    <div class="meta">
+        <time datetime="2016-10-20T23:36:13.000Z" itemprop="datePublished">2016-10-20</time>
     </div>
 
-  </div>
 
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
+              <span>
+    
+        <a class="" href="/2016/10/20/JavaScript-Strings/">JavaScript Strings?</a>
     
 
-    
-    
 
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/Planning/">Planning</a><a href="/tags/Agile/">Agile</a><a href="/tags/SCRUM/">SCRUM</a><a href="/tags/Design/">Design</a><a href="/tags/Data-Design/">Data Design</a>
-    </span>
-    
-
+</span>
+          </li>
+        
+          <li class="post-item">
+              
+    <div class="meta">
+        <time datetime="2016-10-14T23:08:23.000Z" itemprop="datePublished">2016-10-14</time>
     </div>
 
+
+              <span>
     
-  </div>
-</article>
-
-
-
-  <article>
-
-  
+        <a class="" href="/2016/10/14/Template-Loading-Why/">Template Loading, Why?</a>
     
-    <h3 class="article-title"><a href="/2016/08/30/Static-Website-Generation-Framework/"><span>Static Website Generation Framework</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/08/30/Static-Website-Generation-Framework/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-08-31T02:11:29.000Z">
-          2016-08-30
-        </time>
-      </a>
-    </span>
-  </div>
 
 
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>I have chosen to build a static website generation framework. Users give the framework simple inputs and a website is born.</p>
-<h1 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h1><p>Any project requires the usage of tools. You don’t build cabinents with your bare hands. You use a hammer.</p>
-<h2 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h2><p>In order to grab files with content from the server, AJAX will be needed. jQuery as a library provides this with the least amount of headache.</p>
-<h2 id="Mustache-js"><a href="#Mustache-js" class="headerlink" title="Mustache.js"></a>Mustache.js</h2><p>Static website generators use templating engines to describe their page layouts. <a href="https://hexo.io/docs/templates.html" target="_blank" rel="external">Hexo</a> uses some form of ERB inspired template. <a href="https://jekyllrb.com/docs/templates/" target="_blank" rel="external">Jekyll</a> uses the liquid templating engine. I would like to use Mustache because it is simple, readable, flexible, light weight, and portable. jQuery comes with a templating system that I could use without adding anymore weight to my project, but it is awful and I don’t want to deal with it.</p>
-<h2 id="Markdown-js"><a href="#Markdown-js" class="headerlink" title="Markdown.js"></a>Markdown.js</h2><p><a href="https://github.com/hexojs/hexo-renderer-marked" target="_blank" rel="external">Hexo</a> uses its own markdown rederer. <a href="https://jekyllrb.com/docs/posts/" target="_blank" rel="external">Jekyll</a> also uses markdown. While this isn’t the only option, as a static web page generator could potentially use any lightweight markup language(LML), it is the best option for a couple of reasons. Markdown has deep penetration thanks to GitHub and Reddit. It’s also extremely simple and human readable, which is why those two organizations picked it in the first place.</p>
-<p>Other lightweight markdown languages I could use that aren’t Markdown include <a href="http://docutils.sourceforge.net/rst.html" target="_blank" rel="external">reStructuredText</a> which is the prefered LML of the Python community. I feel however that this markup language is a little too complicated and doesn’t have enough penetration that many people would be familiar with it. A static web generation framework should require as little new learning on the part of the user as possible.</p>
-<h1 id="Time-Estimate"><a href="#Time-Estimate" class="headerlink" title="Time Estimate"></a>Time Estimate</h1><ol>
-<li>2 Weeks: build initial website</li>
-<li>1 Week:  site information file</li>
-<li>1 Week:  markdown content</li>
-<li>4 Weeks: dynamic file scanning</li>
-<li>4 Weeks: search engine visibility</li>
-</ol>
-<h1 id="Intermediate-Goals"><a href="#Intermediate-Goals" class="headerlink" title="Intermediate Goals"></a>Intermediate Goals</h1><ol>
-<li>Working website</li>
-<li>Markdown based website</li>
-<li>Purely dynamic website</li>
-</ol>
-
-      
+</span>
+          </li>
+        
+          <li class="post-item">
+              
+    <div class="meta">
+        <time datetime="2016-10-10T16:46:33.000Z" itemprop="datePublished">2016-10-10</time>
     </div>
 
-  </div>
 
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
+              <span>
+    
+        <a class="" href="/2016/10/10/AJAX-Testing-Synchronousity/">AJAX Testing; Synchronousity</a>
     
 
+
+</span>
+          </li>
+        
+        
+            <li class="post-more"><a href="/archives"><emph>more...</emph></a></li>
+        
+      </ul>
+    </section>
     
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/JavaScript/">JavaScript</a><a href="/tags/HTML/">HTML</a><a href="/tags/Web-Development/">Web Development</a><a href="/tags/Planning/">Planning</a><a href="/tags/Development/">Development</a><a href="/tags/Framework/">Framework</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2016/08/27/Three-Project-Ideas/"><span>Three Project Ideas</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/08/27/Three-Project-Ideas/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-08-28T02:03:24.000Z">
-          2016-08-27
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>This is my first post on this blog, so I think I’d like to introduce it just a little bit before I get things going. This is my development blog. I post about things I am working on. Right now, I’m working on my senior capstone at Berea College. These are a few ideas that I’ve been thinking about to work on.</p>
-<h1 id="Twitter-Bot-Detector"><a href="#Twitter-Bot-Detector" class="headerlink" title="Twitter Bot Detector"></a>Twitter Bot Detector</h1><p>Someone in our class pitched the idea of a Twitter Bot as a project. I, being a contrarian, immediately thought to myself that I should build a Twitter Bot Detector.</p>
-<p>After looking into the viability of this project, I found that the University of Texas had already done this, so I looked at their work. There are several parts of detecting a twitter bot, all related to different aspects of a bot’s behavior.</p>
-<p>The first thing to look at is how much content is the bot creating, and how much is it regurgitating via retweets. An actual human person will on occasion have something to say about something. It might be how their day was, it might be what they had for breakfast, it might be an excited tweet about the future times. Whatever it is, a human person will do this along side retweeting things that they found nifty.</p>
-<p>The next tell tale sign of a twitter bot is the times of activity. Actual human people have things they have to do through out their day. They need sleep, they need food, they have to interact with physical people in the physical world, they need to rotate their fluids. Twitter bots don’t have to do any of these things. When looking at a human person’s twitter feed, it will have sporadic activity; it will have periods of rapid tweeting and retweeting followed by large blocks of doing other things. Twitter bots deviate from this behavior. They can have rather constant streams of activity.</p>
-<p>Of course, modern twitter bots are sophisticated enough to pass both of these tests. The next analyses are a little more sophisticated. They require information and language processing that might be a little complex for a single semester of work. I’m still going to describe them because I might decide that they are actually simple enough, or someone else in our class might say to themselves, “Hey. Travis might not be very good at these things, but I’ve done them before, I feel really comfortable with them.”</p>
-<p>The next thing that Twitter Bots don’t have in common with human people is sensible social networks. Human people have friends who know their other friends You can reasonably expect a human user of twitter to have several followers who not only follow the account in question, but also follow the several other accounts that follow them as well as the account in question. This however does need to take into consideration extremely popular twitter accounts as well as verified accounts (which are generally popular).</p>
-<p>Even so, twitter bot builders have gotten sophisticated enough to subvert this test method as well. They’ll set up several bot accounts that all follow each other creating a social network of bots. I’m sure there are still ways to detect this form of activity, but what I’m not sure about is how to do this. I would probably put more thought into the next detection method before coming back around to this.</p>
-<p>Human people usually use language in a certain way. One example would be that human people don’t say “human people.” I’ve been doing that through this portion of the blog post to get ready for this part of it. A bot detector needs to do some language processing to see how human a questionable account seems to be in its tweets. Ideally this mechanism would be quite robust, but a language processor could make an entire project in itself. For the purposes of this course, the bot detector’s ability to process language should be very basic.</p>
-<p>Each on their own, these methods can create quite a few false positives, or miss advanced bots that successfully circumvent their methods. One needs to gather results from each method and process them in order to come to an actual conclusion. The first method I thought of to compile this data was a neural network, but there are probably other ways as well.</p>
-<p>Conveniently, these are five different parts of creating a twitter bot detector, and they are all rather modular. I think the completion of each component in order make for excellent milestones for our senior projects course. I don’t think spacing the components evenly is a wise plan though. The content vs regurgitation component should take less time than the others, though it is also the first component and needs to take learning how twitter handles data into consideration. Content vs regurgitation should take two weeks.</p>
-<p>The activity monitor is also pretty simple, and should take about the same amount of time as the content vs regurgitation component. However, the programmer will already be familiar with how Twitter handles data by this time. I think this should only take a week.</p>
-<p>This leaves 12 weeks to handle the big problems. I would allocate four weeks to social network analysis, three to handle language processing, and two to set up a neural network. I’ve given language processing a little less time because I don’t think I can possibly come up with something adequate even given the whole semester. I do however I think I can come up with something super basic if given three weeks given some of the excellent resources available to us here at Berea College in the form of our professors. Two weeks might seem like a long time to set up a neural network, but in my experience, the tools for this are buggy and poorly documented.</p>
-<p>This leaves three weeks for testing and fixing. That is less time than I would like for a project of this complexity, especially given that attempts at budgeting time for it might be way off scale for how much any component that turns out to be more complex than initially believed. That being said, after writing out the necessary steps, this project seems much more realistic than it had when it was bouncing around in my head.</p>
-<p>This project also gives me an opportunity to grow because it is so different from the things that I have been working on. The problem for me is that I don’t think it gives me any utility growth, that being growth I can use. It would be a fun project centered around things I don’t know much about, but I don’t see a future path that would be strengthened by this project.</p>
-<p>I still feel like all of this was more than I could handle over a single semester. I think I would be more interested in it if no one had done anything in the field, or enough people had done work on the problem that I could make a small tweak on a proven concept to make something interesting.</p>
-<p>Taking a proven concept and putting a small tweak on it to create something interesting brings me into my next topic…</p>
-<h1 id="Email-Client"><a href="#Email-Client" class="headerlink" title="Email Client"></a>Email Client</h1><p>Using Node and Electron, JavaScript can be used for nearly anything. I would like to play with creating an email client using electron.</p>
-<p>Sending email using HTML formatted text can be really annoying when there’s a WYSIWYG editing pane that refuses to rest control when the user asks for it (looking at you, Evolution). I would like to create one that has an editing pane on the left that displays in plain text, and a preview window on the right that displays what the email will look like to its recipient.</p>
-<p>This email client would not be comprehensive. It would only support the most widely used protocols such as IMAP. Protocols like Exchange would be too big to worry about in a single semester. I would rather focus on creating a well polished, easy to use, basic email client than a feature complete email client that doesn’t look nice. There’s Mutt for that.</p>
-<p>I think it’s worth considering when thinking about both the user interface and milestones for the project what the views in an email client are. Usually you have a pane for your folders, a pane that displays your emails in a list format, a pane that displays the content of a single email, a pane for composing your email, and a set up pane. That is five panes total.</p>
-<p>While it might seem like the best plan is to divide the term into milestones for each of these components, I think a better plan would be to cycle through these components rapidly, and improve them on each cycle. What I mean by this is that instead of blocking out 3 weeks straight to work on the composition pane, I would maybe spend each of my sessions in those three weeks working on a single view, creating an iteration of the whole every three weeks.</p>
-<p>The work schedule I have set up for myself includes five hours on Thursday and five hours on Friday each week to work on my project. I would do something like Spending the Thursday of the start of each three week cycle designing how I want things to work, and then the Friday working on one component. The next week I would spend Thursday one of the remaining four components, and Friday working on one of the remaining three. In the third and final week of each cycle I would work on the two components I hadn’t worked on yet.</p>
-<p>This gives a sort of release cycle milestone set up that I think would work a lot like working on a novella or paper. First you create a rough draft, one in this case that might not even function completely properly. The first editing session you spend figuring out what you like and don’t like about your rough draft, making changes to the structure of your rough draft, and fixing major bugs with the system, producing a second draft.</p>
-<p>The reason I refer to the releases as drafts is that you might come up with an interface concept that in practice isn’t as good as you thought it was, so then you would have to spend quite a bit of time making major changes to the way things were. The other reason is that much like in writing a paper, there are going to be errors in the code of the program. This is especially true because Electron is a technology that I am not familiar with working on from scratch. Any programming that I have done in the environment has been working with a preexisting project.</p>
-<p>It’s sort of strange to think that one of the ideas I’m considering is centered around a user interface idea that I have. User interfaces always presented me problems when they were introduced in whatever programming language tutorial I was working through. I am hopeful that my experience using MinCSS to style pages will provide some help, given that Electron apps are essentially web pages.</p>
-<p>Just as interesting twists on ideas drew me directly into this idea, web pages draws me into the next one…</p>
-<h1 id="Static-Web-Page-Generator"><a href="#Static-Web-Page-Generator" class="headerlink" title="Static Web Page Generator"></a>Static Web Page Generator</h1><p>A Static Web Page Framework takes input files and uses them to build a website. I want to build one that doesn’t require compilation or installation.</p>
-<p>This is the idea I have put the most thought into, which is why I have presented it last. I wanted to give the other ideas I have a chance in the sun in case someone else had interest in them. I don’t want my excited energy to dissuade anyone else from thinking about my other ideas. I think they’re both fun ideas that could be really interesting to play with, but this is the idea that I’m the most interested in doing.</p>
-<p>Over the summer, a friend of mine asked for help building a website for her business. That website is still in progress, but over the course of getting it to it’s current status (bug fixes), I learned a lot about creating a web page by dynamically loading information into a view using JSON files. I still think I can do better.</p>
-<p>I want to create a general purpose static web page framework along these same principles. All of the processing of data will be handled by the web browser. This makes my project significantly different from something like Hexo. With most Static Website Generators, you write files, and then run some form of compilation. HTML files are output, and those are used for the website.</p>
-<p>My project will require no compilation. A single HTML file will use JavaScript to inject information into HTML elements. Before I have done this using JSON files that contain the information that is to be injected. I would like to use something more human readable like markdown. The specific tools that I would use to make this happen would be Mustache.js, jQuery, and Markdown.js.</p>
-<p>Milestones would be structured around how I set up my initial project. What I am planning to do is to create a single JSON object that contains all the information necessary to create a website. Each step of building my project would entail removing a component from the object and moving it into another file structure.</p>
-<p><img src="http://i.imgur.com/TRwYl69.jpg" alt="I may or may not have left the pen in the shot because I think it looks nifty"></p>
-<p>The first milestone will be setting up the website to work on this base object. Functionality can be drawn out of this object into other files for future milestones. This first milestone is rather large because it includes such things as writing the HTML code that will be used to display the content and integrating Markdown.js and Mustache.js to turn the content into HTML. I expect this to take two weeks.</p>
-<p>The second milestone will be a simple one. I want to draw the site information away from the basic starter object into its own file. This will include things that are the same on every single page that the user visits like the title of the website, the favicon, and the contact information of the site owner. This milestone won’t take very long because it is so simple. I expect it to take a week. This might seem like a lot of time to dedicate to this task, but I expect there to be ideas I have to make this feature even better and more human readable while I work on it.</p>
-<p>The third milestone will be to draw content out of the main object and separate it into markdown files. The content of files on a server can be accessed using AJAX as long as the file name is known. This is why the filenames will still be in the main object. In fact, at this point in the project, the filenames will be the only things left in the object. I already have experience doing this, but it still takes quite a bit of code to do. I think it will take me about two weeks.</p>
-<p>The fourth milestone will be the hardest one. I want to get rid of the object entirely. I would like to use a web server’s directory listing to gather the names of all of the markdown files so that the JavaScript can pull content from these files without being told explicitly what their names are. I think this should take four weeks.</p>
-<p>The final milestone will be to modify the project so that when someone searches the web the content of the site can be queried by the search engine of their choice. I’m not very sure how hard this will be, so I would like to dedicate as much time to it as I did for the web server directory listing milestone. All in all, this leaves three weeks for testing and fixing, as well as room for if one of these tasks presents unforeseen problems and takes more time to work on than was originally budgeted. That’s pretty accurate to how I want my senior project to be structured, so I feel really comfortable with this idea being the one I go forward with. I might be favoring it unfairly, but I just think it fits the structure of this course better than my other ideas, and is the one I have the most familiarity with.</p>
-<p>A human readable compilation free static website framework could be a really great thing for people hosting websites on servers and don’t know much about creating web pages. It would provide a path for minimal set up, though it would decrease the responsiveness and performance of the website. This is a sacrifice I am willing to make for the sake of a fun project that does something interesting.</p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/JavaScript/">JavaScript</a><a href="/tags/brainstorming/">brainstorming</a><a href="/tags/planning/">planning</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-
-<nav class="pagination">
-  
-  <a href="/" class="pagination-prev">Prev</a>
-  
-  
-</nav>
-    </main>
-
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
-    </br>
-    
-    &copy; 2016 Travis Rigg
-    
-  </p>
-</footer>
-    
-  </div>
 </div>
+
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2016 Travis Rigg&#39;s Blogging and Development Extravaganza
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/archives">Writing</a></li>
+        <li><a href="http://github.com/probberechts">Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    <script src="/vendor/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
 </body>
 </html>
