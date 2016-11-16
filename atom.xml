@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="riggt.github.io/"/>
-  <updated>2016-11-04T16:28:38.214Z</updated>
+  <updated>2016-11-16T17:25:58.881Z</updated>
   <id>riggt.github.io/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sudden Burst of Progress</title>
+    <link href="riggt.github.io/2016/11/16/Sudden-Burst-of-Progress/"/>
+    <id>riggt.github.io/2016/11/16/Sudden-Burst-of-Progress/</id>
+    <published>2016-11-16T17:17:57.000Z</published>
+    <updated>2016-11-16T17:25:58.881Z</updated>
+    
+    <content type="html"><![CDATA[<p>I haven’t had much to show for lately in my debugging. Today I found some very<br>interesting bugs.</p>
+<h1 id="What-was-going-on"><a href="#What-was-going-on" class="headerlink" title="What was going on?"></a>What was going on?</h1><p>None of my links were appearing upon loading the page. There were two factors<br>at play in this. The first was that the CSS framework I was using before was<br>squelching links. The second was that when I migrated I changed a name of an<br>element I was injecting content into.</p>
+<p>When these links finally did appear, they weren’t links to anything. Something<br>was wrong with either my template or the navigation object I was creating. It<br>actually didn’t take me very long to discover that a double quote mark had been<br>left out. I never would have found this issue if I hadn’t already fixed the<br>other. It’s been a cycle of dependencies.</p>
+<p>The most helpful aspect of this experience has been learning JavaScript<br>debugging strategies. I’m actually really happy about this.</p>
+<h1 id="What’s-next"><a href="#What’s-next" class="headerlink" title="What’s next?"></a>What’s next?</h1><p>I have created an infinite loop of page loading. It’s actually quite a<br>disastrous bug. The trouble is that with each successive page load, the<br>website’s memory usage increases until eventually my computer freezes. I<br>suspect that somewhere I have an event listener that is listening for an<br>element to load rather than for a click on this element.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I haven’t had much to show for lately in my debugging. Today I found some very&lt;br&gt;interesting bugs.&lt;/p&gt;
+&lt;h1 id=&quot;What-was-going-on&quot;&gt;&lt;a hre
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
+    
+      <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
+    
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+    
+      <category term="Debugging" scheme="riggt.github.io/tags/Debugging/"/>
+    
+  </entry>
   
   <entry>
     <title>A New Direction: Maximizing Productivity and Chances at Completion</title>
@@ -151,17 +183,17 @@
     
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
-    
       <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
-      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
-      <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
+      <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
       <category term="Failing in Silence" scheme="riggt.github.io/tags/Failing-in-Silence/"/>
     
       <category term="Staring at Walls" scheme="riggt.github.io/tags/Staring-at-Walls/"/>
+    
+      <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
     
       <category term="File Names" scheme="riggt.github.io/tags/File-Names/"/>
     
@@ -200,11 +232,11 @@
     
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
-      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
-    
       <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="Scheduling" scheme="riggt.github.io/tags/Scheduling/"/>
+    
+      <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
@@ -238,15 +270,15 @@
     </summary>
     
     
-      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
-    
-      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
-    
       <category term="AJAX" scheme="riggt.github.io/tags/AJAX/"/>
     
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
+    
+      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
+    
+      <category term="Time Management" scheme="riggt.github.io/tags/Time-Management/"/>
     
   </entry>
   
@@ -270,15 +302,15 @@
     </summary>
     
     
-      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
-    
-      <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
-    
       <category term="Testing" scheme="riggt.github.io/tags/Testing/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
       <category term="Javascript" scheme="riggt.github.io/tags/Javascript/"/>
+    
+      <category term="Unit Testing" scheme="riggt.github.io/tags/Unit-Testing/"/>
+    
+      <category term="Measured Work" scheme="riggt.github.io/tags/Measured-Work/"/>
     
       <category term="QUnit" scheme="riggt.github.io/tags/QUnit/"/>
     
@@ -324,9 +356,9 @@
     
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
     
-      <category term="Report" scheme="riggt.github.io/tags/Report/"/>
-    
       <category term="Mustache" scheme="riggt.github.io/tags/Mustache/"/>
+    
+      <category term="Report" scheme="riggt.github.io/tags/Report/"/>
     
       <category term="Initial Development" scheme="riggt.github.io/tags/Initial-Development/"/>
     
@@ -529,17 +561,17 @@
     </summary>
     
     
+      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
+    
       <category term="JavaScript" scheme="riggt.github.io/tags/JavaScript/"/>
     
       <category term="HTML" scheme="riggt.github.io/tags/HTML/"/>
     
       <category term="Web Development" scheme="riggt.github.io/tags/Web-Development/"/>
     
-      <category term="Planning" scheme="riggt.github.io/tags/Planning/"/>
+      <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
     
       <category term="Development" scheme="riggt.github.io/tags/Development/"/>
-    
-      <category term="Framework" scheme="riggt.github.io/tags/Framework/"/>
     
   </entry>
   
